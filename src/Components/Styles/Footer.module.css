@@ -1,0 +1,28 @@
+.container {
+    text-align: center;
+    padding: 30px;
+}
+.name {
+    color: rgb(133, 76, 230);
+    font-size: 24px;
+    font-weight: 600;
+}
+.links {
+    margin: 30px auto;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 24px;
+    color: white;
+}
+.links a {
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+.links a:hover {
+    color: rgb(133, 76, 230);
+	transition: all ease-in-out 0.3s;
+}

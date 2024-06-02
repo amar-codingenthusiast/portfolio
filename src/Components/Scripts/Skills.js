@@ -1,7 +1,82 @@
-import React from 'react'
+import styles from "../Styles/Skills.module.css";
+import VanillaTilt from "vanilla-tilt";
+import { useEffect } from "react";
 
 export const Skills = () => {
-  return (
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos dicta sapiente nostrum maxime temporibus labore pariatur animi, commodi, magni est sint deleniti consectetur a mollitia quam numquam ad illum? Amet dignissimos omnis perferendis facilis dicta nemo! Doloremque a repudiandae illo ullam aperiam rem, facilis quisquam maiores itaque sit corrupti ratione sequi velit ad et voluptates deserunt rerum recusandae explicabo est! Necessitatibus, incidunt. Blanditiis ducimus recusandae earum repellendus quos consectetur provident quam et excepturi vitae dolore, nemo dignissimos! Sed in laudantium labore nisi neque recusandae, soluta placeat dolorum animi debitis rerum sequi, dolores architecto velit itaque ipsa. Atque provident id ipsam unde. Nam aliquid earum ea tempora? Incidunt, ipsam. Distinctio saepe, aspernatur eligendi nobis qui a laudantium officiis quas ducimus deserunt reprehenderit consequatur ex necessitatibus ratione. Iste aspernatur voluptatem explicabo distinctio dignissimos perspiciatis doloremque officiis obcaecati. Totam tempore tempora accusamus quis expedita earum neque consectetur delectus assumenda dolorum impedit vel eum, sequi distinctio consequuntur quam velit hic, perferendis molestias! Soluta ad temporibus totam magnam hic aspernatur consequatur, officia praesentium perspiciatis eveniet dolorem, quidem recusandae, sint porro facere. Maiores, unde reiciendis autem excepturi enim nulla sunt fuga deserunt, consectetur reprehenderit dolore. Ullam consequatur praesentium debitis, accusantium, est magnam quia quaerat exercitationem voluptatum veritatis cum nulla? Debitis autem error, sit eveniet eius molestiae aliquid porro recusandae. Architecto nam nesciunt asperiores ipsam earum voluptates rerum perferendis impedit dolor natus, doloremque consequatur placeat ratione sit. Nobis commodi accusamus ullam officia expedita perferendis, possimus repellendus nisi ut, iste sapiente ipsa saepe facilis dolores natus! Qui, vero. Deleniti voluptas ullam itaque similique ipsam harum dolor voluptatibus, enim accusamus nemo, praesentium recusandae nostrum labore molestiae? Sint dolorem libero sed quo ut fuga laboriosam eius, ad iste! Debitis rem repellat quae eos officiis at unde qui ad omnis veritatis similique vero, placeat, excepturi, nobis autem. Possimus voluptatum laboriosam, non minus obcaecati odit! Doloribus aperiam quod alias nulla animi. Ut natus excepturi illo enim id asperiores quaerat. Quisquam, cupiditate dolores. Debitis culpa soluta reprehenderit atque doloremque animi cupiditate nisi explicabo, voluptates ex, natus adipisci vel inventore id dolores iste obcaecati quos repudiandae possimus quod et iusto tempora? Provident dolore tempore temporibus illo, est, voluptates sit saepe repellat reiciendis voluptatem quas ex soluta et. Eius enim facilis recusandae reiciendis libero voluptatibus vitae omnis eaque praesentium? Maxime animi eum ut, tempore sed quas unde aspernatur enim quo repellat incidunt eligendi ducimus, officiis reprehenderit tempora labore nostrum consequuntur, ab laborum fugiat dicta officia quam cumque pariatur. Sed cupiditate eveniet consectetur? Adipisci quibusdam animi perferendis soluta beatae quae. Cupiditate nam ea voluptatibus voluptas quaerat, necessitatibus maiores sequi voluptatum, cumque, eius laborum ducimus distinctio eaque expedita. Tempora, sint saepe doloribus eveniet et nostrum. Vel optio beatae voluptas nam repellendus repudiandae commodi magni, nobis ad distinctio qui dolorum quisquam. Beatae quasi hic aperiam animi perspiciatis enim voluptate soluta doloribus eum, voluptates eius quibusdam aliquam esse, illo minus voluptatem placeat consequuntur, deleniti laboriosam accusamus neque recusandae provident. Quibusdam excepturi praesentium, placeat iusto ut nihil ea dolorum id dolore autem velit ad harum, eaque ipsa sequi voluptas. Dignissimos optio illo consectetur ipsam vitae, quos aspernatur. Molestiae provident sunt deserunt sed corrupti alias exercitationem. Minima sunt iure laborum. Enim, veritatis. Ut quam atque cumque natus quidem labore. Doloribus laboriosam quod numquam tempore dolorem nisi commodi sequi ex. Nulla facere quo non! Architecto reiciendis esse quidem iusto soluta aliquid, id dolore autem suscipit tempore dolorem cupiditate temporibus blanditiis. Nesciunt, beatae maxime! Eveniet corporis, earum inventore provident eligendi facere eum reiciendis quo consectetur culpa itaque vero odio sint laboriosam modi illum nemo ullam, assumenda perspiciatis voluptatum voluptates voluptate rem repellat quasi! Rerum laboriosam, facilis ipsum dolorum magni nisi consequuntur, error vero illo vitae maxime hic dolores magnam accusantium modi eaque tempora officiis similique cum tempore minus eveniet nobis inventore earum. Nobis quis provident placeat libero fugit aut commodi incidunt aliquam. Cumque, reprehenderit recusandae dolorum quibusdam facere necessitatibus non illo blanditiis beatae doloribus. Consectetur a quo quis provident possimus quae impedit fuga labore, ad, eligendi cum facilis laudantium nostrum minus. Reprehenderit modi excepturi quos placeat? Atque nam nihil sequi sit voluptatibus. Minima, repellat repellendus. Iste, odit? Soluta illum dicta exercitationem neque ex nostrum consequatur velit obcaecati animi, a recusandae quae nesciunt fugiat alias, maxime provident libero officiis possimus quas natus quos at accusantium ut? Voluptates neque soluta veritatis tenetur voluptatum, sint explicabo tempore temporibus natus vitae delectus sit est nostrum eaque in perferendis cum maxime ut saepe eum fugit officiis rerum sapiente laboriosam. Minus eveniet excepturi, illo alias itaque impedit magni porro officia repellat harum maxime, quidem laudantium saepe esse earum blanditiis quis corrupti eius dicta! Delectus nisi voluptatum reprehenderit aspernatur quasi reiciendis maiores, beatae error, quae et, numquam dolorem hic esse modi. Neque porro atque labore repellendus. Laudantium dolores, corporis, blanditiis temporibus qui repellendus placeat modi iure deserunt pariatur tempore in architecto ipsam? Odit facere voluptatum, velit recusandae iste quisquam omnis minima dignissimos praesentium, corporis nemo inventore amet ex exercitationem nam harum animi illo minus suscipit. Saepe voluptatem hic laudantium maiores quam, aliquam ad, ratione facere eos deserunt inventore, explicabo necessitatibus magni provident ullam ipsam! Quos pariatur, omnis eius itaque nemo blanditiis atque dolore ipsam assumenda perferendis! Sapiente, deleniti voluptatum. Modi, error sed. Eum possimus illo consequuntur ullam, minus consectetur doloremque maiores magni temporibus beatae at! Voluptas beatae corporis rerum suscipit. Necessitatibus non perspiciatis animi voluptate illum sapiente eaque, laudantium atque ipsa ipsam incidunt, corporis fugiat. Porro ea sit nam, sint quae ab minima natus fuga nisi odit recusandae at assumenda perferendis alias fugiat placeat laborum rerum quo cum tempora. Repudiandae, dolor, eveniet quisquam accusantium illum ipsum placeat dignissimos facere esse quis consequatur. Quisquam animi itaque iste, ut ab iure laudantium maiores asperiores neque nobis recusandae odit fugit saepe illo error assumenda molestias accusamus? Ab nulla amet numquam eligendi unde? Harum laudantium fuga, aperiam sunt qui non labore unde debitis aliquid. Modi quo repellat pariatur quis eveniet. Labore architecto cumque exercitationem maxime beatae accusantium culpa expedita quas. Sed quae, ipsa tenetur id repellat omnis dolorem ullam sunt quisquam alias sit voluptates, enim dicta delectus dolore consequatur illum! Expedita, totam sunt.</div>
-  )
-}
+    useEffect(() => {
+        const elements = document.querySelectorAll(".tilt");
+        elements.forEach((element) => {
+            VanillaTilt.init(element, {
+				max: 25,
+				speed: 400,
+				reverse: true,
+				glare: true,
+				scale: 1.1,
+				"max-glare": 0.3,
+            });
+        });
+    }, []);
+
+	return (
+		<div className={styles.container}>
+			<p className={styles.heading}>Skills</p>
+			<p className={styles.desc}>
+                Tools and programming languages I utilize to create and develop innovative projects.
+			</p>
+			<div className={styles.cards_container}>
+                <div className={styles.row}>
+                    <div className={`${styles.cards} tilt`}>
+                        <div>Languages</div>
+                        <div className={styles.tech_box}>
+                            <div className={styles.tech}><img src={require("../Images/java.png")} alt="java" />Java</div>
+                            <div className={styles.tech}><img src={require("../Images/cpp.png")} alt="cpp" />C++</div>
+                            <div className={styles.tech}><img src={require("../Images/html.png")} alt="html" />HTML</div>
+                            <div className={styles.tech}><img src={require("../Images/css.png")} alt="css" />CSS</div>
+                            <div className={styles.tech}><img src={require("../Images/javascript.png")} alt="javascript" />JavaScript</div>
+                            <div className={styles.tech}><img src={require("../Images/dsa.png")} alt="dsa" />DSA</div>
+                            <div className={styles.tech}><img src={require("../Images/oops.jpg")} alt="oops" />OOPs</div>
+                        </div>
+                    </div>
+                    <div className={`${styles.cards} tilt`}>
+                        <div>Frontend</div>
+                        <div className={styles.tech_box}>
+                            <div className={styles.tech}><img src={require("../Images/reactjs.png")} alt="reactjs" />React.js</div>
+                            <div className={styles.tech}><img src={require("../Images/mern.png")} alt="mern" />MERN Stack</div>
+                            <div className={styles.tech}><img src={require("../Images/restapi.png")} alt="restapi" />REST API</div>
+                            <div className={styles.tech}><img src={require("../Images/bootstrap.png")} alt="bootstrap" />Bootstrap</div>
+                            <div className={styles.tech}><img src={require("../Images/reactbootstrap.png")} alt="reactbootstrap" />React Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.row}>
+                    <div className={`${styles.cards} tilt`}>
+                        <div>Backend & Database</div>
+                        <div className={styles.tech_box}>
+                            <div className={styles.tech}><img src={require("../Images/nodejs.png")} alt="nodejs" />Node.js</div>
+                            <div className={styles.tech}><img src={require("../Images/expressjs.png")} alt="expressjs" />Express.js</div>
+                            <div className={styles.tech}><img src={require("../Images/mongodb.png")} alt="mongodb" />MongoDB</div>
+                            <div className={styles.tech}><img src={require("../Images/mysql.png")} alt="mysql" />MySQL</div>
+                            <div className={styles.tech}><img src={require("../Images/maven.png")} alt="maven" />Maven</div>
+                            <div className={styles.tech}><img src={require("../Images/gradle.png")} alt="gradle" />Gradle</div>
+                            <div className={styles.tech}><img src={require("../Images/thunderclient.png")} alt="thunderclient" />Thunder Client</div>
+                            <div className={styles.tech}><img src={require("../Images/glitch.png")} alt="glitch" />Glitch</div>
+                        </div>
+                    </div>
+                    <div className={`${styles.cards} tilt`}>
+                        <div>Other Tools</div>
+                        <div className={styles.tech_box}>
+                            <div className={styles.tech}><img src={require("../Images/git.png")} alt="git" />Git</div>
+                            <div className={styles.tech}><img src={require("../Images/github.png")} alt="github" />GitHub</div>
+                            <div className={styles.tech}><img src={require("../Images/jdbc.jpg")} alt="jdbc" />JDBC</div>
+                            <div className={styles.tech}><img src={require("../Images/vscode.png")} alt="vscode" />VS Code</div>
+                            <div className={styles.tech}><img src={require("../Images/eclipse.png")} alt="eclipse" />Eclipse</div>
+                            <div className={styles.tech}><img src={require("../Images/intellijidea.png")} alt="intellijidea" />IntelliJ Idea</div>
+                            <div className={styles.tech}><img src={require("../Images/chatgpt.png")} alt="chatgpt" />ChatGPT</div>
+                            <div className={styles.tech}><img src={require("../Images/photoshop.png")} alt="photoshop" />Photoshop</div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	);
+};

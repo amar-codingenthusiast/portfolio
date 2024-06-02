@@ -1,0 +1,108 @@
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.heading {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 600;
+}
+.desc {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #919299;
+    margin: 0 10px;
+}
+.cards_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.row {
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.cards {
+    height: 100%;
+    padding: 25px;
+    min-width: 330px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    background-color: rgba(17, 25, 40, 0.83);
+    box-shadow: rgba(29, 92, 230, 0.15) 0 0 24px;
+    color: rgb(177, 178, 179);
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+.tech_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tech {
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgba(242, 243, 244, 0.5);
+    border-radius: 12px;
+    margin: 10px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: rgba(242, 243, 244, 0.5);
+}
+.tech img {
+    height: 25px;
+    width: 25px;
+}
+@media screen and (max-width: 800px) {
+    .heading {
+        font-size: 40px;
+    }
+    .desc {
+        font-size: 16px;
+    }
+    .cards {
+        width: 90%;
+        min-width: 0;
+        max-width: 450px;
+        font-size: 20px;
+    }
+    .tech {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cards {
+        padding: 15px;
+    }
+    .tech {
+        padding: 4px 8px;
+        margin: 5px;
+    }
+}

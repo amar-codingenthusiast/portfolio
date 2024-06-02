@@ -1,14 +1,13 @@
 .navbar {
 	position: fixed;
-	z-index: 10;
+	z-index: 1000;
 	top: 0;
 	width: 100%;
 	background-color: rgb(9, 9, 23);
 	color: white;
+	max-width: 1200px;
 }
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
 	height: 80px;
 	padding: 0 20px;
 	overflow: hidden;
@@ -73,8 +72,8 @@
 	display: none;
 	position: absolute;
 	width: 100%;
-	background-color: rgb(19, 19, 31);
-	/* background-color: rgba(19, 19, 31, 0.7); */
+	/* background-color: rgb(19, 19, 31); */
+	background-color: rgba(19, 19, 31, 0.7);
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	overflow: hidden;
@@ -87,7 +86,7 @@
 	padding: 15px 30px;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 800px) {
 	.collapse {
 		display: none;
 	}

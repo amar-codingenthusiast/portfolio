@@ -1,7 +1,346 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import styles from "../Styles/Timeline.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Projects = () => {
-  return (
-    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab vero eos fugit hic tempora voluptates possimus harum similique doloremque ducimus corrupti nam praesentium maiores ad, nihil sunt mollitia blanditiis. Perspiciatis doloremque, dolore at nobis veritatis voluptate fugiat laborum corporis est a in, eligendi libero ducimus enim! Amet et eveniet reprehenderit sapiente, delectus molestias, beatae consequatur consectetur aperiam commodi neque accusamus placeat nobis necessitatibus expedita reiciendis fugit autem dolor. Laboriosam voluptatem dolorem fuga optio at, quibusdam atque, laudantium ipsam voluptate odit dolorum porro, incidunt consequuntur eveniet inventore repellat temporibus deserunt nostrum? Atque quo obcaecati aliquid quaerat quis adipisci, doloribus officiis exercitationem excepturi at ipsa laudantium, unde mollitia ipsam. Soluta unde recusandae inventore, voluptatibus nulla, pariatur veniam beatae molestias, nam hic facere voluptatum? Quaerat libero, pariatur sequi, id placeat labore nobis soluta consequatur doloremque tenetur suscipit veniam est voluptate corporis voluptatem veritatis aliquam exercitationem deleniti tempore dolorem officia minus. Corrupti, consequatur natus ratione pariatur totam sequi magnam quidem culpa facilis blanditiis mollitia provident, dignissimos fugit nostrum odit, dolor dolores alias cum vitae ullam aliquid nulla. Repudiandae suscipit delectus nostrum odio. Beatae inventore voluptas rem eveniet veritatis labore mollitia consequuntur repellat, quibusdam, doloremque est sunt totam voluptatem atque commodi illo libero! Provident voluptatum quia quibusdam sapiente at, quam sit dolor. Quisquam, praesentium nesciunt doloribus molestiae ad aspernatur! Laboriosam explicabo consequatur, officia, expedita debitis vitae ab assumenda quia deserunt eius maiores magnam? Nesciunt ullam neque repudiandae numquam dignissimos, ex voluptatem ab molestiae quaerat praesentium? Amet reiciendis dignissimos quidem modi nam at veniam culpa iusto iure impedit corporis iste vitae quis libero autem, fugiat in reprehenderit praesentium facilis totam veritatis fugit. Magnam suscipit, quia ut minima, numquam necessitatibus facilis officiis voluptate molestias perspiciatis aperiam inventore error, ex consectetur laborum nulla sed iusto fuga accusantium hic doloribus id voluptatem eius. Commodi placeat nihil adipisci impedit! Perspiciatis modi delectus quia aut nihil deserunt nulla ducimus velit possimus soluta ipsa sequi aperiam recusandae fugiat ea itaque fuga harum tempora, iusto optio illum dolor culpa hic? Excepturi et nesciunt cupiditate quis ratione blanditiis nam aliquid, necessitatibus qui consectetur porro vel repellendus assumenda vero ab quod, earum nostrum, exercitationem pariatur laborum commodi suscipit praesentium. Aperiam ut nesciunt eaque doloribus, repudiandae error nam maxime a alias repellendus ullam vel ea incidunt enim animi sapiente provident inventore itaque quidem omnis. Perferendis repellendus numquam sunt amet atque debitis qui animi, aliquam sapiente quas, nostrum modi ullam? Iure consequuntur vel eius maxime illum ducimus accusantium laudantium, reiciendis totam dolor iste similique laborum veritatis fuga, tempora architecto quos doloribus excepturi accusamus dolorum hic libero. Officia repellat, fugiat dignissimos, fugit voluptas ad saepe, neque iusto natus harum quas blanditiis sit excepturi adipisci quo facere officiis minus aperiam velit recusandae deserunt? Beatae, voluptatibus aut id, aliquid ex quae ducimus reprehenderit veniam iste repellendus accusamus suscipit doloribus placeat neque dolor dolores est, voluptate obcaecati voluptatum? Excepturi dolore velit consequuntur commodi maiores, temporibus natus enim dignissimos reprehenderit sequi nemo! Sequi a aperiam dolor, itaque quidem quis similique, quisquam ipsum, fugiat quasi ratione sapiente! Tenetur rerum, blanditiis inventore libero pariatur veritatis? Laboriosam modi sequi numquam magni voluptate ut, praesentium dignissimos laborum perspiciatis sapiente repellendus nam beatae sint molestiae ipsum adipisci enim, debitis eligendi cum! Enim nisi dolore sequi, corrupti nesciunt rerum adipisci dolorum consequatur vel impedit velit necessitatibus facilis? Corporis velit adipisci inventore quisquam, dolores repellat modi tenetur deserunt voluptas ullam porro. Sapiente velit necessitatibus, inventore amet aliquid enim similique distinctio modi exercitationem laboriosam explicabo delectus voluptas sunt optio architecto repudiandae eveniet recusandae at molestiae tenetur mollitia cumque dolore excepturi tempora? Sed eaque at accusamus vero temporibus consectetur deserunt, ex mollitia, quod hic, ad beatae cum assumenda? Consequuntur repellat ut, sequi dicta aliquam tempora ad! Illo harum saepe voluptatibus ad sit veniam eaque eligendi aut ex dolores, consequuntur eos pariatur fuga, tenetur natus ipsum hic voluptate. Blanditiis animi rem accusamus similique laborum ducimus vel doloremque nostrum accusantium magnam temporibus sapiente, soluta inventore repellendus aliquid ullam quae atque iure consequuntur fugiat laboriosam eaque odio? Libero autem repudiandae ab accusamus eveniet sed doloribus ex unde hic explicabo architecto placeat ullam incidunt fugit nihil ipsum veniam quia, quis, quae voluptates perferendis, recusandae rerum impedit qui. Laboriosam pariatur neque dolorum aliquid nam sint. Fugiat accusantium, tenetur laborum quo possimus odit temporibus saepe eius iusto qui suscipit ipsam at voluptates asperiores quia sed aperiam facere. Suscipit voluptas sequi nisi vitae tenetur explicabo ea sed cum repudiandae iure ipsa dignissimos quod provident consequuntur, accusantium illo, harum, aut dicta culpa voluptatem officia maiores qui ex! Ipsa hic fugiat aliquam accusantium ex voluptas vitae totam doloribus eius facilis et odit cumque in soluta, deleniti nemo. Placeat quam ducimus ipsam iusto autem error sit eius culpa non? Non assumenda sint sequi harum omnis quas a repudiandae dolorem obcaecati, praesentium commodi repellendus mollitia reiciendis, consequuntur cupiditate enim suscipit accusamus nobis eum, repellat sunt sapiente tempora ducimus architecto! Nulla culpa explicabo alias veritatis sint, harum quisquam impedit nam quasi fugit odit sit eius sed aut. Recusandae mollitia aut at numquam, quasi corporis. Quo earum magni est ullam laborum animi quis quia veritatis harum, dignissimos eum voluptatem doloremque enim repellat officia illo iure dolores illum similique suscipit. Voluptatum hic quidem aspernatur eos minus qui, officiis omnis iure neque cumque iste consequatur accusamus sint, exercitationem soluta quos fuga magni facilis quae fugiat autem laboriosam. Vitae assumenda distinctio dolore repellendus sit debitis facilis illum sequi accusamus architecto esse nesciunt obcaecati dolorem, quam deserunt consequuntur cum voluptatem iusto cumque provident libero perferendis. Dolor fuga eos nihil nulla laborum, aspernatur quam voluptates accusantium hic possimus amet in dicta quod similique. Laboriosam vel consectetur enim autem tempore quis eveniet minima sequi, quidem ex officiis eius repellat velit sit, exercitationem beatae, quibusdam corrupti perferendis illum eligendi optio a culpa dignissimos. Iste velit non repudiandae quo rerum nihil, nisi atque quia tempora. Omnis esse architecto unde, nisi veniam ex. Blanditiis ad provident iure est perspiciatis officiis expedita similique officia culpa voluptate explicabo, porro quos? A deleniti delectus, debitis tempora ducimus iusto recusandae nobis eveniet dignissimos eligendi ut tenetur. Eos illum dolore reiciendis nihil ullam totam quidem saepe dolorum nobis?</div>
-  )
-}
+	useEffect(() => {
+		const elements = document.querySelectorAll("#video");
+		elements.forEach((element) => {
+			element.play().catch((error) => {
+				console.error("Autoplay failed", error);
+			});
+		});
+		AOS.init({ duration: 1000, offset: 200 });
+	}, []);
+
+	return (
+		<div className={styles.container}>
+			<p className={styles.heading}>Projects</p>
+			<p className={styles.desc}>
+				Here are some of the projects I've developed and worked on,
+				showcasing my skills and creativity.
+			</p>
+			<div className={styles.timeline}>
+				<div className={`${styles.box} ${styles.left_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/inotebook.jpg")}
+						alt="inotebook"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/inotebook.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>mern</span>
+							<span className={styles.tags}>jwt</span>
+							<span className={styles.tags}>bcrypt.js</span>
+							<span className={styles.tags}>bootstrap</span>
+							<span className={styles.tags}>font awesome</span>
+						</div>
+						<p className={styles.title}>iNoteBook</p>
+						<p className={styles.subtitle}>
+							A secured notebook on cloud
+						</p>
+						<p className={styles.description}>
+							iNoteBook is a secure cloud-based notebook using the
+							MERN stack, JWT, and Bcrypt.js. It ensures user
+							privacy with Bcrypt.js authentication and uses JWT
+							for reliable user verification. The app allows for
+							flexible note creation, each with timestamps for
+							organized tracking. Bootstrap and Font Awesome
+							enhance its design, ensuring a responsive and
+							seamless experience across all device sizes.
+							iNoteBook provides a secure, efficient solution for
+							managing notes online.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://github.com/amar-codingenthusiast/inotebook"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+							<a
+								href="https://amar-codingenthusiast.github.io/inotebook"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Live App
+							</a>
+						</div>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.right_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/newsmonkey.jpg")}
+						alt="newsmonkey"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/newsmonkey.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>react.js</span>
+							<span className={styles.tags}>bootstrap</span>
+							<span className={styles.tags}>fetch api</span>
+						</div>
+						<p className={styles.title}>News Monkey</p>
+						<p className={styles.subtitle}>
+							A news app with Fetch-API
+						</p>
+						<p>
+							News Monkey is a React.js-based news app utilizing
+							Bootstrap and the Fetch API. It fetches top
+							headlines from the GNews API, offering nine news
+							categories and a search option. The app features
+							Infinite Scroll and a Top Loading Bar for enhanced
+							user experience. Bootstrap ensures a responsive
+							design, making News Monkey accessible and seamless
+							across all device sizes. News Monkey provides a
+							streamlined way to stay updated with the latest
+							news.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://github.com/amar-codingenthusiast/news-monkey3"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+							<a
+								href="https://amar-codingenthusiast.github.io/news-monkey3"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Live App
+							</a>
+						</div>
+						<span className={styles.right_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.left_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/currencyconverter.jpg")}
+						alt="currencyconverter"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/currencyconverter.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>html</span>
+							<span className={styles.tags}>css</span>
+							<span className={styles.tags}>javascript</span>
+							<span className={styles.tags}>fetch api</span>
+							<span className={styles.tags}>font awesome</span>
+						</div>
+						<p className={styles.title}>
+							Google Currency Converter
+						</p>
+						<p className={styles.subtitle}>
+							A clone of Google Currency Converter
+						</p>
+						<p>
+							Currency Converter is a clone of Google Currency
+							Converter built with HTML, CSS, JavaScript, Fetch
+							API, and Font Awesome. It uses real-time exchange
+							rates from the Open Exchange Rates API to convert
+							between over 150 currencies. The app features a
+							responsive design, ensuring usability across
+							devices. The source code is available on GitHub for
+							transparency and collaboration. Currency Converter
+							provides an efficient, real-time solution for
+							currency conversion needs.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://github.com/amar-codingenthusiast/currency-converter"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+							<a
+								href="https://amar-codingenthusiast.github.io/currency-converter"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Live App
+							</a>
+						</div>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.right_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/amazonclone.jpg")}
+						alt="amazonclone"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/amazonclone.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>html</span>
+							<span className={styles.tags}>css</span>
+							<span className={styles.tags}>font awesome</span>
+						</div>
+						<p className={styles.title}>Amazon Clone</p>
+						<p className={styles.subtitle}>
+							A clone of Amazon.com Home Page
+						</p>
+						<p>
+							Amazon Clone is a replica of the Amazon.com home
+							page created with HTML, CSS, and Font Awesome. It
+							closely resembles the original, replicating the
+							header, navbar, footer, hero section, and shop
+							section with over 90% similarity. The project aims
+							to mirror the look and feel of the Amazon home page.
+							The source code is available on GitHub for review
+							and contribution. This clone offers a comprehensive
+							example of front-end design and implementation.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://github.com/amar-codingenthusiast/amazon"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+							<a
+								href="https://amar-codingenthusiast.github.io/amazon"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Live App
+							</a>
+						</div>
+						<span className={styles.right_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.left_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/bank.jpg")}
+						alt="banking"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/bank.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>java</span>
+							<span className={styles.tags}>oops</span>
+							<span className={styles.tags}>jdbc</span>
+							<span className={styles.tags}>mysql</span>
+						</div>
+						<p className={styles.title}>
+							Banking Management System
+						</p>
+						<p className={styles.subtitle}>
+							A terminal based CRUD App
+						</p>
+						<p>
+							Banking Management System is a terminal-based CRUD
+							application developed using Java, OOP principles,
+							JDBC, and MySQL. It features user authentication
+							through signup and login. Users can perform banking
+							operations like depositing, withdrawing,
+							transferring funds, and checking their balance. The
+							source code and a demo video are accessible on the
+							GitHub repository. This system provides a functional
+							and educational example of basic banking operations
+							in a terminal interface.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://github.com/amar-codingenthusiast/banking-management-system"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+							<a
+								href="https://drive.google.com/file/d/1Px-hOQVv_qf2_q06WM8p5STrthN46a5X/view?usp=drive_link"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Demo Video
+							</a>
+						</div>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};

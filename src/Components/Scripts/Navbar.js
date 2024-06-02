@@ -4,19 +4,22 @@ import styles from "../Styles/Navbar.module.css";
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const navigate = useNavigate();
+
 	const handleIsOpen = () => {
 		setIsOpen(!isOpen);
 	};
-	const navigate = useNavigate();
 
 	const scrollToSection = (sectionId) => {
 		const section = document.getElementById(sectionId);
 		if (section) {
-			section.scrollIntoView({
+			const sectionPosition =
+				section.getBoundingClientRect().top + window.scrollY;
+			const offsetPosition = sectionPosition - 80; // 80 for navbar
+			window.scrollTo({
+				top: offsetPosition,
 				behavior: "smooth",
-				block: "start",
 			});
-			navigate(`#${sectionId}`, { replace: true });
 		}
 		if (isOpen) {
 			handleIsOpen();
@@ -24,61 +27,43 @@ export const Navbar = () => {
 	};
 
 	const [activeLink, setActiveLink] = useState("");
+	useEffect(() => {
+		const handleScroll = () => {
+			const sections = document.querySelectorAll("section[id]");
+			const scrollPosition = window.scrollY;
+			const windowHeight = window.innerHeight;
+			sections.forEach((section) => {
+				const top =
+					section.getBoundingClientRect().top + scrollPosition;
+				const height = section.offsetHeight;
+				if (
+					scrollPosition >= top - windowHeight * 0.5 &&
+					scrollPosition < top + height - windowHeight * 0.5
+				) {
+					setActiveLink(section.id);
+				}
+			});
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	useEffect(() => {
-		const handleInitialNavigation = () => {
-			const hash = window.location.hash.substring(1);
-			if (hash) {
-				const section = document.getElementById(hash);
-				if (section) {
-					section.scrollIntoView({ behavior: "smooth", block: "start" });
-					setActiveLink(hash);
-				}
-			} else {
-				// Default to 'about' section on initial load
-				navigate(`#about`, { replace: true });
-				setActiveLink("about");
-			}
-		};
-
-		handleInitialNavigation();
-
-		const sections = document.querySelectorAll("div[id]");
-		const options = {
-			root: null,
-			rootMargin: "0px",
-			threshold: 0.3,
-		};
-
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					const sectionId = entry.target.id;
-					setActiveLink(sectionId);
-					navigate(`#${sectionId}`, { replace: true });
-				}
-			});
-		}, options);
-
-		sections.forEach((section) => {
-			observer.observe(section);
-		});
-
-		return () => {
-			sections.forEach((section) => {
-				observer.unobserve(section);
-			});
-		};
-	}, [navigate]);
+		if (activeLink) {
+			navigate(`/${activeLink}`);
+		}
+	}, [activeLink, navigate]);
 
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.container}>
 				<div>
 					<Link
-						to="#about"
+						to="/"
 						className={styles.name}
-						onClick={() => scrollToSection("about")}
+						onClick={() =>
+							window.scrollTo({ top: 0, behavior: "smooth" })
+						}
 					>
 						<span className={styles.brackets}>&lt;</span>Amar
 						<span className={styles.slash}>/</span>Kumar
@@ -130,15 +115,15 @@ export const Navbar = () => {
 					</li>
 					<li>
 						<NavLink
-							to="#experience"
+							to="#achievements"
 							className={
-								activeLink === "experience"
+								activeLink === "achievements"
 									? styles.active
 									: styles.anchor
 							}
-							onClick={() => scrollToSection("experience")}
+							onClick={() => scrollToSection("achievements")}
 						>
-							Experience
+							Achievements
 						</NavLink>
 					</li>
 					<li>
@@ -152,19 +137,6 @@ export const Navbar = () => {
 							onClick={() => scrollToSection("education")}
 						>
 							Education
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							to="#contacts"
-							className={
-								activeLink === "contacts"
-									? styles.active
-									: styles.anchor
-							}
-							onClick={() => scrollToSection("contacts")}
-						>
-							Contacts
 						</NavLink>
 					</li>
 				</ul>
@@ -222,15 +194,15 @@ export const Navbar = () => {
 					</li>
 					<li>
 						<NavLink
-							to="#experience"
+							to="#achievements"
 							className={
-								activeLink === "experience"
+								activeLink === "achievements"
 									? styles.active
 									: styles.anchor
 							}
-							onClick={() => scrollToSection("experience")}
+							onClick={() => scrollToSection("achievements")}
 						>
-							Experience
+							Achievements
 						</NavLink>
 					</li>
 					<li>
@@ -244,19 +216,6 @@ export const Navbar = () => {
 							onClick={() => scrollToSection("education")}
 						>
 							Education
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							to="#contacts"
-							className={
-								activeLink === "contacts"
-									? styles.active
-									: styles.anchor
-							}
-							onClick={() => scrollToSection("contacts")}
-						>
-							Contacts
 						</NavLink>
 					</li>
 					<li>

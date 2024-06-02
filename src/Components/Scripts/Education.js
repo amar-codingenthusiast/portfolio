@@ -1,7 +1,85 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import styles from "../Styles/Timeline.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Education = () => {
-  return (
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia commodi nesciunt aut, ea dignissimos dolorem, sunt corrupti sequi eveniet odio quasi saepe et veniam tempore suscipit vitae eius itaque! Fuga, accusamus. Magni fugit aperiam dolore ab. Dicta neque rerum quisquam, ullam delectus natus numquam aliquid hic exercitationem! Doloremque quidem dolorum harum. Ratione ducimus accusamus, temporibus unde laborum fugiat fugit quas. Similique nisi quaerat ex a eius tempora molestiae tenetur dolorem, autem velit harum ab dignissimos neque nihil. Sunt, delectus, architecto ex quaerat magnam ipsa cum porro dolor eum quo earum eaque perferendis dolores maxime facere expedita aut officiis. Minus ratione in minima eum velit. Mollitia necessitatibus commodi quisquam pariatur qui, vero numquam, hic officia impedit at nisi veniam alias aut nam adipisci? Est maiores voluptas quia voluptatibus ab repudiandae magnam nisi nulla saepe iure eos laudantium molestias distinctio nihil similique eaque pariatur, iste vitae reiciendis. Ratione quaerat, velit quis facilis eius fuga dolorem ad inventore ipsum praesentium delectus distinctio, veniam quasi molestias. Consequuntur ullam itaque porro, rerum non commodi qui iure, perferendis voluptas eius provident repellat? Deserunt, adipisci minus provident doloribus a officiis voluptate at quis eius, quam vel expedita exercitationem culpa. Odit sint veniam velit. Perspiciatis magnam vitae numquam fuga aut facere. Ratione eos harum voluptatum quisquam aspernatur perferendis unde, ex sunt porro provident optio expedita! Repellendus optio corrupti perferendis eos ipsam. Reiciendis, illum beatae? At maxime officia tempora vitae commodi porro ipsam optio neque enim dolores nisi voluptas, officiis alias saepe necessitatibus consequatur provident eius omnis a molestias cum. Dolorem ratione architecto, labore, repellat animi beatae numquam asperiores dolore quidem maxime, magni et non. Asperiores, fugit? Quisquam nisi ab porro nobis enim! Quasi, recusandae omnis placeat harum amet velit repellendus quae quo soluta tenetur accusantium quibusdam. Nemo nesciunt adipisci voluptatum quae, sint iure odit delectus accusamus porro voluptate repudiandae, nihil saepe nostrum dignissimos veniam, iusto corrupti rerum nisi vel optio quia. Excepturi, reprehenderit quibusdam, voluptatem dicta soluta voluptates rerum at eaque vel nostrum, enim magni illo perferendis necessitatibus quia deleniti magnam quam numquam officiis delectus voluptatum laborum. Quaerat aspernatur excepturi blanditiis rerum, omnis perspiciatis dolorum neque eligendi vel doloremque qui tempora a fuga enim accusantium similique ipsa repellat aliquid consectetur corporis. Dolorem corrupti ex dolorum eos consequuntur, aspernatur omnis, expedita sequi quos hic veniam ad autem rem eum molestias vero ipsum cum, exercitationem vel deleniti dolore? Maxime, autem dolore in tenetur omnis quidem quam vel ab, delectus eligendi nostrum tempore rerum, aspernatur nihil nisi iusto recusandae ex voluptatem pariatur iste vero quos corrupti? Sed in, ipsa omnis exercitationem nostrum vero voluptates incidunt inventore nobis eum nihil tempore corporis perferendis voluptatem repellat natus quas cumque dolorem veniam. Quae dolores ipsam culpa dicta perspiciatis maiores harum voluptates esse? Laudantium rerum temporibus recusandae eligendi placeat non assumenda dolorum excepturi harum tempore consequuntur voluptatem possimus architecto, facere, vitae nisi quod ducimus quas quam error laborum omnis vero. Atque beatae cum, in recusandae alias, explicabo voluptatem voluptatibus blanditiis hic et rerum quasi sint ducimus ab aperiam. Recusandae accusamus repellat magnam maxime vero. Harum nulla mollitia ipsum enim et beatae pariatur ut, quam, earum facere expedita voluptatem deserunt nostrum possimus dolor quia maiores quod tempore ratione debitis quo itaque recusandae obcaecati nesciunt? Cumque, fuga vel. Quasi commodi, magnam consectetur placeat vel labore maxime rerum corrupti, iste ut voluptas totam aut quod vitae ipsum. Repudiandae quibusdam reiciendis impedit ipsa itaque nostrum voluptas reprehenderit, maiores laudantium id et ratione ipsam dolore earum labore fuga incidunt sunt! Eveniet sint atque voluptatem ut dolore sit similique voluptatibus est recusandae, doloremque fugiat cupiditate, ad eos consequuntur repudiandae corporis velit consequatur officia tempore libero. Asperiores provident itaque animi ipsum distinctio ullam voluptates qui ipsa ab repudiandae. Perferendis commodi unde dicta minus iste! Nemo possimus quae libero adipisci voluptatibus voluptatum veniam ab quod vel in cupiditate vero dolorem officia, placeat suscipit neque dolorum harum praesentium eius mollitia. Dicta similique perspiciatis vero quae ex pariatur officia vel nam eos, assumenda distinctio omnis nisi praesentium sapiente aliquam tenetur facere. Aut asperiores aperiam fugiat veniam repellat quos similique eum quo quasi accusamus corrupti recusandae voluptates dolores maiores, tenetur dolore iure. Doloribus, sit magni cumque deserunt saepe numquam dolores provident inventore rerum ullam quam animi officia, iure possimus eos facere laudantium. Eum itaque mollitia minus maiores id amet illum ducimus, blanditiis eligendi voluptatem, tempora quo, placeat voluptas qui? Optio cum voluptate corrupti dolorum, quidem labore alias reiciendis cumque, tenetur quos atque minima, repudiandae odit nemo excepturi. Officiis quas, cumque eum illum libero, quaerat eligendi, corrupti aliquam quae officia facilis mollitia earum obcaecati provident quibusdam suscipit reiciendis. Magnam, amet rem. Sapiente nam recusandae voluptas dolorum fuga consequuntur officia obcaecati perspiciatis minima ea omnis, unde repellendus? Quod corrupti iste cupiditate. Cupiditate velit id esse dolore reiciendis saepe dolores, laborum deserunt pariatur, recusandae fuga dolorum officiis quisquam adipisci? Molestias eaque impedit reprehenderit, modi cumque placeat. Vero, optio laboriosam molestiae veritatis porro, eligendi voluptatum blanditiis perferendis ipsam exercitationem laborum rem fuga distinctio laudantium culpa. Odit pariatur incidunt suscipit veritatis quasi, ipsam minus. Accusantium exercitationem maxime fugit quibusdam, molestias doloremque consequatur harum eligendi aliquid sed sit. Ipsam dolorum deleniti modi, quasi amet ad veritatis quia, eos, odit eligendi accusamus beatae non? Doloremque soluta doloribus nihil blanditiis commodi! Quidem, culpa. Assumenda maxime corporis consequatur ratione, libero in at, ab, animi earum exercitationem sequi. Ab id tempora sed quisquam consequuntur unde, suscipit quam nihil provident praesentium deserunt ratione nulla facilis ullam modi dolorem sequi. Dignissimos est delectus eaque, fugiat quis ullam aut at aperiam sequi voluptatum officia corporis atque excepturi vitae totam, soluta voluptate assumenda optio aspernatur accusantium veritatis iure nisi? Dolore repellendus nihil recusandae quo fuga eaque, saepe laudantium sit voluptas aut! Magnam nihil inventore ex, explicabo id nobis magni perspiciatis saepe eos ipsum. Dignissimos quibusdam illum accusantium ex. Dolorem neque, voluptas quo velit dolores doloremque sed blanditiis distinctio adipisci illum veniam labore error voluptatibus perspiciatis! Perspiciatis nihil atque minima nulla pariatur inventore voluptatem laudantium accusamus voluptatibus repellat, ipsum modi corrupti dolores odit molestias ex nesciunt nostrum, ratione possimus sed qui! Facere animi aliquid illo accusamus placeat quis quaerat fuga dolores?</div>
-  )
-}
+	useEffect(() => {
+		AOS.init({ duration: 1000, offset: 200 });
+	}, []);
+
+	return (
+		<div className={styles.container}>
+			<p className={styles.heading}>Education</p>
+			<p className={styles.desc}>
+				The academic institutions and programs that have contributed to
+				my knowledge and growth.
+			</p>
+			<div className={styles.timeline}>
+				<div className={`${styles.box} ${styles.left_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/brabu.jpg")}
+						alt="brabu"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<p className={styles.title}>
+							Bachelor of Commerce
+						</p>
+						<p className={styles.subtitle}>
+							University: BRABU, Muzaffarpur
+						</p>
+						<p className={styles.description}>
+							Graduated with 71.13% marks in 2020 from MS College,
+							Motihari. This degree provided a strong foundation
+							in business principles and practices, enhancing my
+							analytical and financial skills.
+						</p>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.right_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/bseb.jpg")}
+						alt="bseb"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<p className={styles.title}>
+							Intermediate of Commerce
+						</p>
+						<p className={styles.subtitle}>Board: BSEB, Patna</p>
+						<p>
+							Completed with 69.20% marks in 2017 from MHK
+							College, Motihari. Focused on advanced commerce
+							subjects, preparing me for higher education and a
+							career in business and finance.
+						</p>
+						<span className={styles.right_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.left_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/bseb.jpg")}
+						alt="bseb"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<p className={styles.title}>Matriculation</p>
+						<p className={styles.subtitle}>Board: BSEB, Patna</p>
+						<p>
+							Achieved 75.20% marks in 2015 from Gopal Sah School,
+							Motihari. This stage of education laid the
+							groundwork for my academic journey, emphasizing core
+							subjects and essential skills.
+						</p>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};

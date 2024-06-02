@@ -9,4 +9,24 @@
 body {
 	background-color: rgb(9, 9, 23);
     color: white;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: #222a35;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #575c66;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #626970;
 }
