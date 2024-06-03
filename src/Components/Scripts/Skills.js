@@ -4,17 +4,23 @@ import { useEffect } from "react";
 
 export const Skills = () => {
     useEffect(() => {
-        const elements = document.querySelectorAll(".tilt");
-        elements.forEach((element) => {
-            VanillaTilt.init(element, {
-				max: 25,
-				speed: 400,
-				reverse: true,
-				glare: true,
-				scale: 1.1,
-				"max-glare": 0.3,
+        const isTouchDevice = () => {
+            return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        };
+
+        if (!isTouchDevice()) {
+            const elements = document.querySelectorAll(".tilt");
+            elements.forEach((element) => {
+                VanillaTilt.init(element, {
+                    max: 25,
+                    speed: 400,
+                    reverse: true,
+                    glare: true,
+                    scale: 1.1,
+                    "max-glare": 0.3,
+                });
             });
-        });
+        }
     }, []);
 
 	return (
