@@ -1,6 +1,8 @@
 # Portfolio
+Welcome to my portfolio! This project showcases my skills, projects and experiences as a web developer and programmer.
 
-This project is a personal portfolio website showcasing my skills, projects, achievements, and education. It is built using React and deployed on GitHub Pages.
+## Introduction
+This portfolio website is a comprehensive showcase of my journey as a professional. It highlights my skills, projects, achievements and education across various domains. The website is designed to be visually appealing, user-friendly and fully responsive, ensuring a seamless experience across all devices. It includes detailed sections for my introduction, skills, project showcases, achievements, education and contact information.
 
 ## Getting Started
 
