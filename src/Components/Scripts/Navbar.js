@@ -50,7 +50,7 @@ export const Navbar = () => {
 
 	useEffect(() => {
 		if (activeLink) {
-			navigate(`#${activeLink}`);
+			navigate(`/${activeLink}`);
 		}
 	}, [activeLink, navigate]);
 
