@@ -1,7 +1,8 @@
 .container {
 	display: flex;
 	width: 90%;
-	height: 100%;
+	/* height: 100%; */
+	height: auto;
 	aspect-ratio: 1032/692;
 	justify-content: space-around;
 	align-items: center;
