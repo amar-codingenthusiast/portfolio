@@ -1,19 +1,25 @@
 import styles from "../Styles/About.module.css";
-import { useRef, useEffect } from "react";
+import { useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export const About = () => {
-	const tiltRef = useRef(null);
 	useEffect(() => {
-		if (tiltRef.current) {
-			VanillaTilt.init(tiltRef.current, {
-				max: 25,
-				speed: 400,
-				reverse: true,
-				glare: true,
-				scale: 1.1,
-				"max-glare": 0.8,
+		const isTouchDevice = () => {
+			return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+		};
+
+		if (!isTouchDevice()) {
+			const elements = document.querySelectorAll(".tilt");
+			elements.forEach((element) => {
+				VanillaTilt.init(element, {
+					max: 25,
+					speed: 400,
+					reverse: true,
+					glare: true,
+					scale: 1.1,
+					"max-glare": 0.3,
+				});
 			});
 		}
 	}, []);
@@ -21,6 +27,7 @@ export const About = () => {
 		words: [
 			"Full Stack Developer",
 			"MERN Stack Developer",
+			"Flutter Developer",
 			"Java Developer",
 			"C++ Developer",
 		],
@@ -42,14 +49,16 @@ export const About = () => {
 					</span>
 				</div>
 				<div className={styles.bio}>
-					I am a motivated and versatile individual, always eager to
-					take on new challenges. With a passion for learning I am
-					dedicated to delivering high-quality results. With a
-					positive attitude and a growth mindset, I am ready to make a
-					meaningful contribution and achieve great things.
+					I specialize in full-stack web development with the MERN
+					stack and mobile app development using Flutter and Firebase.
+					Passionate about building scalable and efficient
+					applications, I enjoy learning new technologies and
+					optimizing workflows. With a strong foundation in software
+					development principles, I strive to create impactful and
+					user friendly solutions.
 				</div>
 				<a
-					href="https://drive.google.com/file/d/1b4CT4swECODIr5rF9Lw44uQqH3Xww6t_/view?usp=drive_link"
+					href="/portfolio/Amar_Kumar.pdf"
 					target="_blank"
 					rel="noreferrer"
 					className={styles.resume}
@@ -58,8 +67,7 @@ export const About = () => {
 				</a>
 			</div>
 			<img
-				className={styles.mypic}
-				ref={tiltRef}
+				className={`${styles.mypic} tilt`}
 				src={require("../Images/mypic.jpg")}
 				alt="mypic"
 			/>

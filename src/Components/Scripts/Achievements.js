@@ -19,66 +19,136 @@ export const Achievements = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
-						src={require("../Images/leetcode.jpg")}
-						alt="leetcode"
+						src={require("../Images/forked.jpg")}
+						alt="forked"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<img
-							src={require("../Images/leetcoderanking.png")}
-							alt="leetcoderanking"
+							src={require("../Images/gridfs.png")}
+							alt="gridfs"
 							width="100%"
 						/>
-						<p className={styles.title}>LeetCode Ranking</p>
+						<p className={styles.title}>
+							Custom Library Enhancement
+						</p>
 						<p className={styles.subtitle}>
-							Achieved competitive programming excellence
+							Forked and fixed Multer-GridFS-Storage for reliable
+							file uploads
 						</p>
 						<p className={styles.description}>
-							Achieving a ranking of 4525th in the LeetCode weekly
-							contest 397 highlights my problem-solving skills.
-							Solving 3 out of 4 problems under time constraints
-							shows my proficiency and ability to perform under
-							pressure. This accomplishment reflects my technical
-							expertise and dedication to competitive programming.
-							It showcases my capability to tackle complex
-							challenges effectively.
+							Identified and resolved a persistent file upload
+							issue in the multer-gridfs-storage library, which
+							was no longer maintained by its original creator. By
+							forking the repository and implementing a fix, I
+							ensured stable and efficient file handling for
+							production applications using MongoDB. This solution
+							provides developers with a more reliable alternative
+							to the outdated version.
 						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://github.com/amar-codingenthusiast/multer-gridfs-storage"
+								target="_blank"
+								rel="noreferrer"
+							>
+								View Repository
+							</a>
+						</div>
 						<span className={styles.left_box_arrow}></span>
 					</div>
 				</div>
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
-						src={require("../Images/consistency.jpg")}
-						alt="consistency"
+						src={require("../Images/newsmonkey.jpg")}
+						alt="newsmonkey"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<img
-							src={require("../Images/leetcodeconsistency.png")}
-							alt="leetcodeconsistency"
+							src={require("../Images/news_monkey.png")}
+							alt="news_monkey"
 							width="100%"
 						/>
-						<p className={styles.title}>
-							Consistency in Problem Solving
-						</p>
+						<p className={styles.title}>News Monkey Adoption</p>
 						<p className={styles.subtitle}>
-							Maintained daily coding practice
+							Personal project recognized and adopted
 						</p>
-						<p>
-							Solving over 100 LeetCode problems and maintaining a
-							streak of 60+ days demonstrates my commitment to
-							continuous learning. This daily practice has
-							enhanced my analytical skills and efficiency. It
-							shows my persistence and ability to master various
-							data structures and algorithms. Consistency in
-							problem-solving is key to developing a deep
-							understanding of programming concepts.
+						<p className={styles.description}>
+							Developed News Monkey, a dynamic news portal
+							designed for real-time news aggregation and seamless
+							user experience. During my internship at The
+							Entrepreneurship Network, the project was recognized
+							for its functionality and adopted by the
+							organization. This demonstrated my ability to build
+							production ready applications with practical use
+							cases. The adoption of this project validated its
+							reliability, usability, and technical efficiency in
+							handling live data.
 						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://github.com/amar-codingenthusiast/news-monkey3"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Source Code
+							</a>
+							<a
+								href="https://news.entrepreneurshipnetwork.net"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Visit Website
+							</a>
+						</div>
 						<span className={styles.right_box_arrow}></span>
 					</div>
 				</div>
 				<div className={`${styles.box} ${styles.left_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/fuvion_techsys.jpg")}
+						alt="fuvion_techsys"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<img
+							src={require("../Images/fuvion_techsys.png")}
+							alt="fuvion_techsys"
+							width="100%"
+						/>
+						<p className={styles.title}>
+							Fuvion Techsys Assignment
+						</p>
+						<p className={styles.subtitle}>
+							From assignment to official company website
+						</p>
+						<p className={styles.description}>
+							As part of the hiring process at Fuvion Techsys, I
+							was tasked with building a demo website to showcase
+							my skills. The project exceeded expectations and was
+							later adopted as the company's main website. This
+							experience highlighted my ability to develop
+							scalable and professional-grade websites that meet
+							business requirements. The transition from an
+							assignment to an official platform reinforced the
+							impact of my work in a real-world corporate setting.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://fuviontechsys.com"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Visit Website
+							</a>
+						</div>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
 						src={require("../Images/certificates.jpg")}
@@ -89,7 +159,8 @@ export const Achievements = () => {
 						<img
 							src={require("../Images/certificatesofcompletion.png")}
 							alt="certificatesofcompletion"
-							width="100%" style={{aspectRatio: 16/9}}
+							width="100%"
+							style={{ aspectRatio: 16 / 9 }}
 						/>
 						<p className={styles.title}>
 							Certificates of Completion
@@ -117,7 +188,7 @@ export const Achievements = () => {
 								View Certificates
 							</a>
 						</div>
-						<span className={styles.left_box_arrow}></span>
+						<span className={styles.right_box_arrow}></span>
 					</div>
 				</div>
 			</div>

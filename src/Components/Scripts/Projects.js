@@ -25,6 +25,184 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						src={require("../Images/jobstock.png")}
+						alt="jobstock"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/jobstock.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>flutter</span>
+							<span className={styles.tags}>firebase</span>
+							<span className={styles.tags}>react</span>
+							<span className={styles.tags}>node.js</span>
+							<span className={styles.tags}>nodemailer</span>
+							<span className={styles.tags}>cron job</span>
+						</div>
+						<p className={styles.title}>Jobstock</p>
+						<p className={styles.subtitle}>
+							A Job Portal Application and Website
+						</p>
+						<p className={styles.description}>
+							Jobstock offers a seamless hiring experience with a
+							Flutter mobile app for job seekers and a React-based
+							web platform for employers and admins. Candidates
+							can create profiles, search for jobs and apply
+							directly through the app, while companies can post
+							listings, filter applicants and manage recruitment
+							via the web portal. Automated emails and scheduled
+							tasks keep users updated, ensuring a smooth,
+							efficient and scalable job search and hiring
+							process.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://play.google.com/store/apps/details?id=com.fuvion_techsys.jobstock"
+								target="_blank"
+								rel="noreferrer"
+							>
+								View App
+							</a>
+							<a
+								href="https://jobstock.fuviontechsys.com"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Visit Website
+							</a>
+						</div>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.right_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/resume.jpg")}
+						alt="resume"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/resumebuilder.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>mern</span>
+							<span className={styles.tags}>tailwind css</span>
+							<span className={styles.tags}>jwt</span>
+							<span className={styles.tags}>bcrypt.js</span>
+							<span className={styles.tags}>google gemini</span>
+						</div>
+						<p className={styles.title}>AI Resume Builder</p>
+						<p className={styles.subtitle}>
+							A Dynamic Resume Creation Platform
+						</p>
+						<p className={styles.description}>
+							AI Resume Builder simplifies professional resume
+							creation with an intuitive, form-driven workflow for
+							freshers and experienced professionals. As backend
+							lead, I designed and implemented routes, schemas,
+							database and server, ensuring seamless
+							integration. I also contributed to frontend bug
+							fixes and design improvements, optimizing the user
+							experience. The platform allows users to build,
+							edit and download polished resume PDFs effortlessly.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://resume.entrepreneurshipnetwork.net"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Visit Website
+							</a>
+						</div>
+						<span className={styles.right_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.left_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/rocket.jpg")}
+						alt="rocket"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/aiconsulting.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>vite</span>
+							<span className={styles.tags}>react</span>
+							<span className={styles.tags}>tailwind css</span>
+							<span className={styles.tags}>react icons</span>
+							<span className={styles.tags}>aos</span>
+							<span className={styles.tags}>calendly</span>
+						</div>
+						<p className={styles.title}>TEN AI Consulting</p>
+						<p className={styles.subtitle}>
+							A Comprehensive Business Website
+						</p>
+						<p className={styles.description}>
+							TEN AI Consulting is a sleek platform for The
+							Entrepreneurship Network, featuring 16 sections,
+							including services, testimonials, FAQs and a
+							Calendly-powered contact form. As team lead, I
+							contributed to development, design refinement and
+							functionality integration to enhance user
+							experience. I also managed deployment, optimization
+							and animations, ensuring fast load times and a
+							smooth, responsive interface.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://aiconsulting.entrepreneurshipnetwork.net"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Visit Website
+							</a>
+						</div>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.right_box}`}>
+					<img
+						className={styles.icons}
 						src={require("../Images/inotebook.jpg")}
 						alt="inotebook"
 						data-aos="zoom-in"
@@ -80,13 +258,13 @@ export const Projects = () => {
 								target="_blank"
 								rel="noreferrer"
 							>
-								Live App
+								Visit Website
 							</a>
 						</div>
-						<span className={styles.left_box_arrow}></span>
+						<span className={styles.right_box_arrow}></span>
 					</div>
 				</div>
-				<div className={`${styles.box} ${styles.right_box}`}>
+				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
 						src={require("../Images/newsmonkey.jpg")}
@@ -142,13 +320,13 @@ export const Projects = () => {
 								target="_blank"
 								rel="noreferrer"
 							>
-								Live App
+								Visit Website
 							</a>
 						</div>
-						<span className={styles.right_box_arrow}></span>
+						<span className={styles.left_box_arrow}></span>
 					</div>
 				</div>
-				<div className={`${styles.box} ${styles.left_box}`}>
+				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
 						src={require("../Images/currencyconverter.jpg")}
@@ -208,68 +386,7 @@ export const Projects = () => {
 								target="_blank"
 								rel="noreferrer"
 							>
-								Live App
-							</a>
-						</div>
-						<span className={styles.left_box_arrow}></span>
-					</div>
-				</div>
-				<div className={`${styles.box} ${styles.right_box}`}>
-					<img
-						className={styles.icons}
-						src={require("../Images/amazonclone.jpg")}
-						alt="amazonclone"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<video
-							id="video"
-							controls
-							loop
-							muted
-							autoPlay
-							style={{ width: "100%" }}
-						>
-							<source
-								src={require("../Images/amazonclone.mp4")}
-								type="video/mp4"
-							/>
-							Your browser does not support the video tag.
-						</video>
-						<div className={styles.tags_box}>
-							<span className={styles.tags}>html</span>
-							<span className={styles.tags}>css</span>
-							<span className={styles.tags}>font awesome</span>
-						</div>
-						<p className={styles.title}>Amazon Clone</p>
-						<p className={styles.subtitle}>
-							A clone of Amazon.com Home Page
-						</p>
-						<p>
-							Amazon Clone is a replica of the Amazon.com home
-							page created with HTML, CSS, and Font Awesome. It
-							closely resembles the original, replicating the
-							header, navbar, footer, hero section, and shop
-							section with over 90% similarity. The project aims
-							to mirror the look and feel of the Amazon home page.
-							The source code is available on GitHub for review
-							and contribution. This clone offers a comprehensive
-							example of front-end design and implementation.
-						</p>
-						<div className={styles.button_box}>
-							<a
-								href="https://github.com/amar-codingenthusiast/amazon"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Source Code
-							</a>
-							<a
-								href="https://amar-codingenthusiast.github.io/amazon"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Live App
+								Visit Website
 							</a>
 						</div>
 						<span className={styles.right_box_arrow}></span>

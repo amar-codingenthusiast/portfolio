@@ -6,7 +6,7 @@ export const Footer = () => {
 			<p className={styles.name}>Amar Kumar</p>
 			<div className={styles.links}>
 				<a
-					href="https://drive.google.com/file/d/1b4CT4swECODIr5rF9Lw44uQqH3Xww6t_/view?usp=drive_link"
+					href="/portfolio/Amar_Kumar.pdf"
 					target="_blank"
 					rel="noreferrer"
 					title="Resume"
@@ -71,7 +71,7 @@ export const Footer = () => {
 					<i className="fa-solid fa-phone"></i>
 				</a>
 				<a
-					href="https://maps.app.goo.gl/U254ZmopzJUM9ic37"
+					href="https://maps.app.goo.gl/FujDqcBCqbbX7rsQA"
 					target="_blank"
 					rel="noreferrer"
 					title="Address"

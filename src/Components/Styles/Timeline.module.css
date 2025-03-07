@@ -78,6 +78,11 @@
 	font-size: 20px;
 	font-weight: 500;
 }
+.italic {
+	color: rgb(177, 178, 179);
+	font-size: 14px;
+	font-weight: 500;
+}
 .tags_box {
 	display: flex;
 	flex-wrap: wrap;
