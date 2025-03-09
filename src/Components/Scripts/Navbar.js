@@ -64,9 +64,10 @@ export const Navbar = () => {
 					<Link
 						to="/"
 						className={styles.name}
-						onClick={() =>
-							window.scrollTo({ top: 0, behavior: "smooth" })
-						}
+						onClick={() => {
+							window.scrollTo({ top: 0, behavior: "smooth" });
+							setIsOpen(false);
+						}}
 					>
 						<span className={styles.brackets}>&lt;</span>Amar
 						<span className={styles.slash}>/</span>Kumar
