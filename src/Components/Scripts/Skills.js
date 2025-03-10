@@ -112,10 +112,10 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
-									src={require("../Images/restapi.png")}
-									alt="restapi"
+									src={require("../Images/flutter.png")}
+									alt="flutter"
 								/>
-								REST API
+								Flutter
 							</div>
 							<div className={styles.tech}>
 								<img
@@ -182,6 +182,13 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									src={require("../Images/restapi.png")}
+									alt="restapi"
+								/>
+								REST API
+							</div>
+							<div className={styles.tech}>
+								<img
 									src={require("../Images/maven.png")}
 									alt="maven"
 								/>
@@ -236,6 +243,20 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									src={require("../Images/vercel.png")}
+									alt="vercel"
+								/>
+								Vercel
+							</div>
+							<div className={styles.tech}>
+								<img
+									src={require("../Images/render.png")}
+									alt="render"
+								/>
+								Render
+							</div>
+							<div className={styles.tech}>
+								<img
 									src={require("../Images/jdbc.jpg")}
 									alt="jdbc"
 								/>
@@ -269,13 +290,13 @@ export const Skills = () => {
 								/>
 								ChatGPT
 							</div>
-							<div className={styles.tech}>
+							{/* <div className={styles.tech}>
 								<img
 									src={require("../Images/photoshop.png")}
 									alt="photoshop"
 								/>
 								Photoshop
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

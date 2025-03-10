@@ -72,11 +72,12 @@ export const Experience = () => {
 							(June 2024 - Sept 2024, Internship, Remote)
 						</p>
 						<p className={styles.description}>
-							I led full-stack projects by integrating routes,
-							schemas, databases and servers; while enhancing
-							frontend components, resolving bugs and optimizing
-							designs for smooth deployments. My collaborative
-							approach consistently accelerated project success.
+							I led full-stack projects - including TEN AI
+							Consulting, AI Resume Builder, TEN Marketing, TEN
+							Mentor Site and TEN Employee Management -
+							integrating routes, schemas, databases; enhancing
+							frontend components, fixing bugs and optimizing
+							deployments.
 						</p>
 						<div className={styles.button_box}>
 							<a
