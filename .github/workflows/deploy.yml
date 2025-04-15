@@ -23,9 +23,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Configure Git author
+        run: |
+          git config --local user.email "amar.codingenthusiast@gmail.com"
+          git config --local user.name "Amar Kumar"
+
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm run deploy
-
