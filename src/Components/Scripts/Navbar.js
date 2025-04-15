@@ -70,7 +70,7 @@ export const Navbar = () => {
 						}}
 					>
 						<span className={styles.brackets}>&lt;</span>Amar
-						<span className={styles.slash}>/</span>Kumar
+						<span className={styles.slash}>/</span>Gupta
 						<span className={styles.brackets}>&gt;</span>
 					</Link>
 				</div>
