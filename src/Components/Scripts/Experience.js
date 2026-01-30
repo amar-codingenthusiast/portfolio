@@ -70,7 +70,7 @@ export const Experience = () => {
 						</p>
 						<p className={styles.subtitle}>Fuvion Techsys</p>
 						<p className={styles.italic}>
-							(Sept 2024 - Present, Full-time, Remote)
+							(Sept 2024 - March 2025, Full-time, Remote)
 						</p>
 						<p className={styles.description}>
 							Gained hands-on experience developing mobile
