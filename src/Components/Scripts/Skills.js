@@ -119,6 +119,13 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									src={require("../Images/redux.png")}
+									alt="redux"
+								/>
+								Redux
+							</div>
+							<div className={styles.tech}>
+								<img
 									src={require("../Images/tailwind.png")}
 									alt="tailwind"
 								/>
@@ -182,6 +189,13 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									src={require("../Images/vps.png")}
+									alt="vps"
+								/>
+								VPS Hosting
+							</div>
+							<div className={styles.tech}>
+								<img
 									src={require("../Images/restapi.png")}
 									alt="restapi"
 								/>
@@ -208,13 +222,6 @@ export const Skills = () => {
 								/>
 								Thunder Client
 							</div>
-							<div className={styles.tech}>
-								<img
-									src={require("../Images/glitch.png")}
-									alt="glitch"
-								/>
-								Glitch
-							</div>
 						</div>
 					</div>
 					<div className={`${styles.cards} tilt`}>
@@ -233,6 +240,13 @@ export const Skills = () => {
 									alt="github"
 								/>
 								GitHub
+							</div>
+							<div className={styles.tech}>
+								<img
+									src={require("../Images/github_actions.png")}
+									alt="github_actions"
+								/>
+								GitHub Actions
 							</div>
 							<div className={styles.tech}>
 								<img
@@ -257,6 +271,13 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									src={require("../Images/docker.png")}
+									alt="docker"
+								/>
+								Docker
+							</div>
+							<div className={styles.tech}>
+								<img
 									src={require("../Images/jdbc.jpg")}
 									alt="jdbc"
 								/>
@@ -271,17 +292,17 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
-									src={require("../Images/eclipse.png")}
-									alt="eclipse"
+									src={require("../Images/android-studio.png")}
+									alt="android-studio"
 								/>
-								Eclipse
+								Android Studio
 							</div>
 							<div className={styles.tech}>
 								<img
-									src={require("../Images/intellijidea.png")}
-									alt="intellijidea"
+									src={require("../Images/kafka.png")}
+									alt="kafka"
 								/>
-								IntelliJ Idea
+								Apache Kafka
 							</div>
 							<div className={styles.tech}>
 								<img

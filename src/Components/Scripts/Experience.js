@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import styles from "../Styles/Timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -30,19 +30,20 @@ export const Experience = () => {
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>
-							Trainee Software Developer
-						</p>
+						<p className={styles.title}>Software Developer</p>
 						<p className={styles.subtitle}>Fuvion Techsys</p>
 						<p className={styles.italic}>
-							(Sept 2024 - Present, Full-time, Remote)
+							(March 2025 - Present, Full-time, Remote)
 						</p>
 						<p className={styles.description}>
-							I develop mobile apps with Flutter & Firebase and
-							build web applications using the MERN stack.
-							Collaborating in agile teams, I create scalable,
-							optimized solutions that boost performance, enhance
-							user experience and consistently drive innovation.
+							Leading the design and development of mobile and web
+							applications with a focus on performance,
+							scalability and maintainability. Implemented CI/CD
+							pipelines using GitHub Actions, integrated Docker
+							for containerized deployments, explored Kafka for
+							data streaming and contributed interactive data
+							visualizations using D3.js to enhance user insights
+							and analytics.
 						</p>
 						<div className={styles.button_box}>
 							<a
@@ -57,6 +58,43 @@ export const Experience = () => {
 					</div>
 				</div>
 				<div className={`${styles.box} ${styles.right_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/fuvion_techsys.jpg")}
+						alt="fuvion_techsys"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<p className={styles.title}>
+							Trainee Software Developer
+						</p>
+						<p className={styles.subtitle}>Fuvion Techsys</p>
+						<p className={styles.italic}>
+							(Sept 2024 - Present, Full-time, Remote)
+						</p>
+						<p className={styles.description}>
+							Gained hands-on experience developing mobile
+							applications using Flutter and Firebase and web
+							applications using the MERN stack. Built responsive,
+							scalable solutions, collaborated with
+							cross-functional teams, optimized workflows and
+							contributed to feature development, testing and bug
+							fixes to ensure high-quality, maintainable and
+							user-friendly software.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://fuviontechsys.com"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Visit Website
+							</a>
+						</div>
+						<span className={styles.right_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
 						src={require("../Images/ten.jpg")}
@@ -88,7 +126,7 @@ export const Experience = () => {
 								Visit Website
 							</a>
 						</div>
-						<span className={styles.right_box_arrow}></span>
+						<span className={styles.left_box_arrow}></span>
 					</div>
 				</div>
 			</div>

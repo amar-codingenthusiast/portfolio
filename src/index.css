@@ -9,8 +9,6 @@
 body {
 	background-color: rgb(9, 9, 23);
     color: white;
-	max-width: 1200px;
-	margin: 0 auto;
 }
 
 ::-webkit-scrollbar {

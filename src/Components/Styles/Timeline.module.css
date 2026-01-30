@@ -5,7 +5,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 150px;
+	max-width: 1200px;
+	margin: 0 auto 150px;
 }
 .heading {
 	text-align: center;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import styles from "../Styles/Timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -19,14 +19,37 @@ export const Education = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
-						src={require("../Images/brabu.jpg")}
+						src={require("../Images/lpu.png")}
 						alt="brabu"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<p className={styles.title}>
-							Bachelor of Commerce
+							Master of Computer Applications
 						</p>
+						<p className={styles.subtitle}>
+							University: LPU, Jalandhar
+						</p>
+						<p className={styles.description}>
+							Pursuing since July 2025 through <b>Online Mode.</b>{" "}
+							This program covers core computer science subjects
+							with a
+							<b>Full Stack Web Development Specialization,</b>{" "}
+							strengthening my skills in application development,
+							system design, and practical problem-solving.
+						</p>
+						<span className={styles.left_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.right_box}`}>
+					<img
+						className={styles.icons}
+						src={require("../Images/brabu.jpg")}
+						alt="brabu"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<p className={styles.title}>Bachelor of Commerce</p>
 						<p className={styles.subtitle}>
 							University: BRABU, Muzaffarpur
 						</p>
@@ -36,10 +59,10 @@ export const Education = () => {
 							in business principles and practices, enhancing my
 							analytical and financial skills.
 						</p>
-						<span className={styles.left_box_arrow}></span>
+						<span className={styles.right_box_arrow}></span>
 					</div>
 				</div>
-				<div className={`${styles.box} ${styles.right_box}`}>
+				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
 						src={require("../Images/bseb.jpg")}
@@ -47,9 +70,7 @@ export const Education = () => {
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>
-							Intermediate of Commerce
-						</p>
+						<p className={styles.title}>Intermediate of Commerce</p>
 						<p className={styles.subtitle}>Board: BSEB, Patna</p>
 						<p>
 							Completed with 69.20% marks in 2017 from MHK
@@ -57,10 +78,10 @@ export const Education = () => {
 							subjects, preparing me for higher education and a
 							career in business and finance.
 						</p>
-						<span className={styles.right_box_arrow}></span>
+						<span className={styles.left_box_arrow}></span>
 					</div>
 				</div>
-				<div className={`${styles.box} ${styles.left_box}`}>
+				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
 						src={require("../Images/bseb.jpg")}
@@ -76,7 +97,7 @@ export const Education = () => {
 							groundwork for my academic journey, emphasizing core
 							subjects and essential skills.
 						</p>
-						<span className={styles.left_box_arrow}></span>
+						<span className={styles.right_box_arrow}></span>
 					</div>
 				</div>
 			</div>

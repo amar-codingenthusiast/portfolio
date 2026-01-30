@@ -5,12 +5,12 @@
 	width: 100%;
 	background-color: rgb(9, 9, 23);
 	color: white;
-	max-width: 1200px;
 }
 .container {
+	max-width: 1200px;
+	margin: 0 auto;
 	height: 80px;
 	padding: 0 20px;
-	/* overflow: hidden; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

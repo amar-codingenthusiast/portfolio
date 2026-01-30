@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import styles from "../Styles/Timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -90,8 +90,8 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
-						src={require("../Images/resume.jpg")}
-						alt="resume"
+						src={require("../Images/employee_dashboard.png")}
+						alt="employee_dashboard"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
@@ -104,7 +104,7 @@ export const Projects = () => {
 							style={{ width: "100%" }}
 						>
 							<source
-								src={require("../Images/resumebuilder.mp4")}
+								src={require("../Images/employee-dashboard.mp4")}
 								type="video/mp4"
 							/>
 							Your browser does not support the video tag.
@@ -114,26 +114,31 @@ export const Projects = () => {
 							<span className={styles.tags}>tailwind css</span>
 							<span className={styles.tags}>jwt</span>
 							<span className={styles.tags}>bcrypt.js</span>
-							<span className={styles.tags}>google gemini</span>
+							<span className={styles.tags}>nodemailer</span>
+							<span className={styles.tags}>cron job</span>
+							<span className={styles.tags}>vps hosting</span>
+							<span className={styles.tags}>github actions</span>
 						</div>
-						<p className={styles.title}>AI Resume Builder</p>
+						<p className={styles.title}>Employee Dashboard</p>
 						<p className={styles.subtitle}>
-							A Dynamic Resume Creation Platform
+							An internal HR platform
 						</p>
 						<p className={styles.description}>
-							AI Resume Builder simplifies professional resume
-							creation with an intuitive, form-driven workflow for
-							freshers and experienced professionals. As backend
-							lead, I designed and implemented routes, schemas,
-							database and server, ensuring seamless
-							integration. I also contributed to frontend bug
-							fixes and design improvements, optimizing the user
-							experience. The platform allows users to build,
-							edit and download polished resume PDFs effortlessly.
+							Employee Dashboard is an internal HR management
+							platform designed to streamline organizational
+							workflows. It allows administrators to create and
+							manage employee profiles, assign tasks, handle leave
+							requests, generate salary slips, post announcements,
+							and resolve support tickets. Employees access
+							personalized dashboards to track their work, view
+							updates, and monitor performance. The platform
+							focuses on secure access, efficient communication,
+							and centralized management of day-to-day HR
+							operations.
 						</p>
 						<div className={styles.button_box}>
 							<a
-								href="https://resume.entrepreneurshipnetwork.net"
+								href="https://employee-dashboard.fuviontechsys.com"
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -203,6 +208,62 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
+						src={require("../Images/resume.jpg")}
+						alt="resume"
+						data-aos="zoom-in"
+					/>
+					<div className={styles.text_box} data-aos="fade-up">
+						<video
+							id="video"
+							controls
+							loop
+							muted
+							autoPlay
+							style={{ width: "100%" }}
+						>
+							<source
+								src={require("../Images/resumebuilder.mp4")}
+								type="video/mp4"
+							/>
+							Your browser does not support the video tag.
+						</video>
+						<div className={styles.tags_box}>
+							<span className={styles.tags}>mern</span>
+							<span className={styles.tags}>tailwind css</span>
+							<span className={styles.tags}>jwt</span>
+							<span className={styles.tags}>bcrypt.js</span>
+							<span className={styles.tags}>google gemini</span>
+						</div>
+						<p className={styles.title}>AI Resume Builder</p>
+						<p className={styles.subtitle}>
+							A Dynamic Resume Creation Platform
+						</p>
+						<p className={styles.description}>
+							AI Resume Builder simplifies professional resume
+							creation with an intuitive, form-driven workflow for
+							freshers and experienced professionals. As backend
+							lead, I designed and implemented routes, schemas,
+							database and server, ensuring seamless integration.
+							I also contributed to frontend bug fixes and design
+							improvements, optimizing the user experience. The
+							platform allows users to build, edit and download
+							polished resume PDFs effortlessly.
+						</p>
+						<div className={styles.button_box}>
+							<a
+								href="https://resume.entrepreneurshipnetwork.net"
+								target="_blank"
+								rel="noreferrer"
+							>
+								Visit Website
+							</a>
+						</div>
+						<span className={styles.right_box_arrow}></span>
+					</div>
+				</div>
+				<div className={`${styles.box} ${styles.left_box}`}>
+					<img
+						className={styles.icons}
 						src={require("../Images/inotebook.jpg")}
 						alt="inotebook"
 						data-aos="zoom-in"
@@ -255,68 +316,6 @@ export const Projects = () => {
 							</a>
 							<a
 								href="https://amar-codingenthusiast.github.io/inotebook"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Visit Website
-							</a>
-						</div>
-						<span className={styles.right_box_arrow}></span>
-					</div>
-				</div>
-				<div className={`${styles.box} ${styles.left_box}`}>
-					<img
-						className={styles.icons}
-						src={require("../Images/newsmonkey.jpg")}
-						alt="newsmonkey"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<video
-							id="video"
-							controls
-							loop
-							muted
-							autoPlay
-							style={{ width: "100%" }}
-						>
-							<source
-								src={require("../Images/newsmonkey.mp4")}
-								type="video/mp4"
-							/>
-							Your browser does not support the video tag.
-						</video>
-						<div className={styles.tags_box}>
-							<span className={styles.tags}>react.js</span>
-							<span className={styles.tags}>bootstrap</span>
-							<span className={styles.tags}>fetch api</span>
-						</div>
-						<p className={styles.title}>News Monkey</p>
-						<p className={styles.subtitle}>
-							A news app with Fetch-API
-						</p>
-						<p>
-							News Monkey is a React.js-based news app utilizing
-							Bootstrap and the Fetch API. It fetches top
-							headlines from the GNews API, offering nine news
-							categories and a search option. The app features
-							Infinite Scroll and a Top Loading Bar for enhanced
-							user experience. Bootstrap ensures a responsive
-							design, making News Monkey accessible and seamless
-							across all device sizes. News Monkey provides a
-							streamlined way to stay updated with the latest
-							news.
-						</p>
-						<div className={styles.button_box}>
-							<a
-								href="https://github.com/amar-codingenthusiast/news-monkey3"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Source Code
-							</a>
-							<a
-								href="https://amar-codingenthusiast.github.io/news-monkey3"
 								target="_blank"
 								rel="noreferrer"
 							>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import styles from "../Styles/Timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -61,54 +61,6 @@ export const Achievements = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
-						src={require("../Images/newsmonkey.jpg")}
-						alt="newsmonkey"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<img
-							src={require("../Images/news_monkey.png")}
-							alt="news_monkey"
-							width="100%"
-						/>
-						<p className={styles.title}>News Monkey Adoption</p>
-						<p className={styles.subtitle}>
-							Personal project recognized and adopted
-						</p>
-						<p className={styles.description}>
-							Developed News Monkey, a dynamic news portal
-							designed for real-time news aggregation and seamless
-							user experience. During my internship at The
-							Entrepreneurship Network, the project was recognized
-							for its functionality and adopted by the
-							organization. This demonstrated my ability to build
-							production ready applications with practical use
-							cases. The adoption of this project validated its
-							reliability, usability, and technical efficiency in
-							handling live data.
-						</p>
-						<div className={styles.button_box}>
-							<a
-								href="https://github.com/amar-codingenthusiast/news-monkey3"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Source Code
-							</a>
-							<a
-								href="https://news.entrepreneurshipnetwork.net"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Visit Website
-							</a>
-						</div>
-						<span className={styles.right_box_arrow}></span>
-					</div>
-				</div>
-				<div className={`${styles.box} ${styles.left_box}`}>
-					<img
-						className={styles.icons}
 						src={require("../Images/fuvion_techsys.jpg")}
 						alt="fuvion_techsys"
 						data-aos="zoom-in"
@@ -145,10 +97,10 @@ export const Achievements = () => {
 								Visit Website
 							</a>
 						</div>
-						<span className={styles.left_box_arrow}></span>
+						<span className={styles.right_box_arrow}></span>
 					</div>
 				</div>
-				<div className={`${styles.box} ${styles.right_box}`}>
+				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
 						src={require("../Images/certificates.jpg")}
@@ -188,7 +140,7 @@ export const Achievements = () => {
 								View Certificates
 							</a>
 						</div>
-						<span className={styles.right_box_arrow}></span>
+						<span className={styles.left_box_arrow}></span>
 					</div>
 				</div>
 			</div>
