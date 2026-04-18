@@ -19,6 +19,7 @@ export const Education = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/lpu.png")}
 						alt="brabu"
 						data-aos="zoom-in"
@@ -44,6 +45,7 @@ export const Education = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/brabu.jpg")}
 						alt="brabu"
 						data-aos="zoom-in"
@@ -65,6 +67,7 @@ export const Education = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/bseb.jpg")}
 						alt="bseb"
 						data-aos="zoom-in"
@@ -84,6 +87,7 @@ export const Education = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/bseb.jpg")}
 						alt="bseb"
 						data-aos="zoom-in"

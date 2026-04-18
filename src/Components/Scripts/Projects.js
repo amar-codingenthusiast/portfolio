@@ -5,13 +5,27 @@ import "aos/dist/aos.css";
 
 export const Projects = () => {
 	useEffect(() => {
-		const elements = document.querySelectorAll("#video");
-		elements.forEach((element) => {
-			element.play().catch((error) => {
-				console.error("Autoplay failed", error);
-			});
-		});
+		const videos = document.querySelectorAll(".project-video");
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					const video = entry.target;
+					if (!(video instanceof HTMLVideoElement)) return;
+					if (entry.isIntersecting) {
+						video.play().catch(() => {});
+					} else {
+						video.pause();
+					}
+				});
+			},
+			{ root: null, rootMargin: "0px 0px -10% 0px", threshold: 0.2 }
+		);
+		videos.forEach((v) => observer.observe(v));
 		AOS.init({ duration: 1000, offset: 200 });
+		return () => {
+			videos.forEach((v) => observer.unobserve(v));
+			observer.disconnect();
+		};
 	}, []);
 
 	return (
@@ -25,17 +39,19 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/jobstock.png")}
 						alt="jobstock"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<video
-							id="video"
+							className="project-video"
+							preload="none"
+							playsInline
 							controls
 							loop
 							muted
-							autoPlay
 							style={{ width: "100%" }}
 						>
 							<source
@@ -90,17 +106,19 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/employee_dashboard.png")}
 						alt="employee_dashboard"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<video
-							id="video"
+							className="project-video"
+							preload="none"
+							playsInline
 							controls
 							loop
 							muted
-							autoPlay
 							style={{ width: "100%" }}
 						>
 							<source
@@ -151,17 +169,19 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/rocket.jpg")}
 						alt="rocket"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<video
-							id="video"
+							className="project-video"
+							preload="none"
+							playsInline
 							controls
 							loop
 							muted
-							autoPlay
 							style={{ width: "100%" }}
 						>
 							<source
@@ -208,17 +228,19 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/resume.jpg")}
 						alt="resume"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<video
-							id="video"
+							className="project-video"
+							preload="none"
+							playsInline
 							controls
 							loop
 							muted
-							autoPlay
 							style={{ width: "100%" }}
 						>
 							<source
@@ -264,17 +286,19 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/inotebook.jpg")}
 						alt="inotebook"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<video
-							id="video"
+							className="project-video"
+							preload="none"
+							playsInline
 							controls
 							loop
 							muted
-							autoPlay
 							style={{ width: "100%" }}
 						>
 							<source
@@ -328,17 +352,19 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/currencyconverter.jpg")}
 						alt="currencyconverter"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<video
-							id="video"
+							className="project-video"
+							preload="none"
+							playsInline
 							controls
 							loop
 							muted
-							autoPlay
 							style={{ width: "100%" }}
 						>
 							<source
@@ -394,17 +420,19 @@ export const Projects = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/bank.jpg")}
 						alt="banking"
 						data-aos="zoom-in"
 					/>
 					<div className={styles.text_box} data-aos="fade-up">
 						<video
-							id="video"
+							className="project-video"
+							preload="none"
+							playsInline
 							controls
 							loop
 							muted
-							autoPlay
 							style={{ width: "100%" }}
 						>
 							<source

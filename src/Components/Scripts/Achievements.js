@@ -19,6 +19,7 @@ export const Achievements = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/forked.jpg")}
 						alt="forked"
 						data-aos="zoom-in"
@@ -28,6 +29,7 @@ export const Achievements = () => {
 							src={require("../Images/gridfs.png")}
 							alt="gridfs"
 							width="100%"
+							loading="lazy"
 						/>
 						<p className={styles.title}>
 							Custom Library Enhancement
@@ -61,6 +63,7 @@ export const Achievements = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/fuvion_techsys.jpg")}
 						alt="fuvion_techsys"
 						data-aos="zoom-in"
@@ -70,6 +73,7 @@ export const Achievements = () => {
 							src={require("../Images/fuvion_techsys.png")}
 							alt="fuvion_techsys"
 							width="100%"
+							loading="lazy"
 						/>
 						<p className={styles.title}>
 							Fuvion Techsys Assignment
@@ -103,6 +107,7 @@ export const Achievements = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/certificates.jpg")}
 						alt="certificates"
 						data-aos="zoom-in"
@@ -113,6 +118,7 @@ export const Achievements = () => {
 							alt="certificatesofcompletion"
 							width="100%"
 							style={{ aspectRatio: 16 / 9 }}
+							loading="lazy"
 						/>
 						<p className={styles.title}>
 							Certificates of Completion

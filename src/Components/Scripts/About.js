@@ -70,6 +70,8 @@ export const About = () => {
 				className={`${styles.mypic} tilt`}
 				src={require("../Images/mypic.jpg")}
 				alt="mypic"
+				loading="eager"
+				fetchPriority="high"
 			/>
 		</div>
 	);

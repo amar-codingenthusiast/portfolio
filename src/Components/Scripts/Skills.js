@@ -37,6 +37,7 @@ export const Skills = () => {
 						<div className={styles.tech_box}>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/java.png")}
 									alt="java"
 								/>
@@ -44,6 +45,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/cpp.png")}
 									alt="cpp"
 								/>
@@ -51,6 +53,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/html.png")}
 									alt="html"
 								/>
@@ -58,6 +61,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/css.png")}
 									alt="css"
 								/>
@@ -65,6 +69,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/javascript.png")}
 									alt="javascript"
 								/>
@@ -72,6 +77,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/dart.png")}
 									alt="dart"
 								/>
@@ -79,6 +85,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/dsa.png")}
 									alt="dsa"
 								/>
@@ -86,6 +93,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/oops.jpg")}
 									alt="oops"
 								/>
@@ -98,6 +106,7 @@ export const Skills = () => {
 						<div className={styles.tech_box}>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/reactjs.png")}
 									alt="reactjs"
 								/>
@@ -105,6 +114,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/mern.png")}
 									alt="mern"
 								/>
@@ -112,6 +122,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/flutter.png")}
 									alt="flutter"
 								/>
@@ -119,6 +130,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/redux.png")}
 									alt="redux"
 								/>
@@ -126,6 +138,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/tailwind.png")}
 									alt="tailwind"
 								/>
@@ -133,6 +146,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/bootstrap.png")}
 									alt="bootstrap"
 								/>
@@ -140,6 +154,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/reactbootstrap.png")}
 									alt="reactbootstrap"
 								/>
@@ -154,6 +169,7 @@ export const Skills = () => {
 						<div className={styles.tech_box}>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/nodejs.png")}
 									alt="nodejs"
 								/>
@@ -161,6 +177,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/expressjs.png")}
 									alt="expressjs"
 								/>
@@ -168,6 +185,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/mongodb.png")}
 									alt="mongodb"
 								/>
@@ -175,6 +193,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/mysql.png")}
 									alt="mysql"
 								/>
@@ -182,6 +201,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/firebase.png")}
 									alt="firebase"
 								/>
@@ -189,6 +209,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/vps.png")}
 									alt="vps"
 								/>
@@ -196,6 +217,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/restapi.png")}
 									alt="restapi"
 								/>
@@ -203,6 +225,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/maven.png")}
 									alt="maven"
 								/>
@@ -210,6 +233,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/gradle.png")}
 									alt="gradle"
 								/>
@@ -217,6 +241,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/thunderclient.png")}
 									alt="thunderclient"
 								/>
@@ -229,6 +254,7 @@ export const Skills = () => {
 						<div className={styles.tech_box}>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/git.png")}
 									alt="git"
 								/>
@@ -236,6 +262,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/github.png")}
 									alt="github"
 								/>
@@ -243,6 +270,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/github_actions.png")}
 									alt="github_actions"
 								/>
@@ -250,6 +278,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/hostinger.png")}
 									alt="hostinger"
 								/>
@@ -257,6 +286,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/vercel.png")}
 									alt="vercel"
 								/>
@@ -264,6 +294,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/render.png")}
 									alt="render"
 								/>
@@ -271,6 +302,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/docker.png")}
 									alt="docker"
 								/>
@@ -278,6 +310,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/jdbc.jpg")}
 									alt="jdbc"
 								/>
@@ -285,6 +318,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/vscode.png")}
 									alt="vscode"
 								/>
@@ -292,6 +326,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/android-studio.png")}
 									alt="android-studio"
 								/>
@@ -299,6 +334,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/kafka.png")}
 									alt="kafka"
 								/>
@@ -306,6 +342,7 @@ export const Skills = () => {
 							</div>
 							<div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/chatgpt.png")}
 									alt="chatgpt"
 								/>
@@ -313,6 +350,7 @@ export const Skills = () => {
 							</div>
 							{/* <div className={styles.tech}>
 								<img
+									loading="lazy"
 									src={require("../Images/photoshop.png")}
 									alt="photoshop"
 								/>

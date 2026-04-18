@@ -5,12 +5,6 @@ import "aos/dist/aos.css";
 
 export const Experience = () => {
 	useEffect(() => {
-		const elements = document.querySelectorAll("#video");
-		elements.forEach((element) => {
-			element.play().catch((error) => {
-				console.error("Autoplay failed", error);
-			});
-		});
 		AOS.init({ duration: 1000, offset: 200 });
 	}, []);
 
@@ -25,6 +19,7 @@ export const Experience = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/fuvion_techsys.jpg")}
 						alt="fuvion_techsys"
 						data-aos="zoom-in"
@@ -60,6 +55,7 @@ export const Experience = () => {
 				<div className={`${styles.box} ${styles.right_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/fuvion_techsys.jpg")}
 						alt="fuvion_techsys"
 						data-aos="zoom-in"
@@ -97,6 +93,7 @@ export const Experience = () => {
 				<div className={`${styles.box} ${styles.left_box}`}>
 					<img
 						className={styles.icons}
+						loading="lazy"
 						src={require("../Images/ten.jpg")}
 						alt="ten"
 						data-aos="zoom-in"
