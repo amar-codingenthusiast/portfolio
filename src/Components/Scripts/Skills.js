@@ -78,6 +78,14 @@ export const Skills = () => {
 							<div className={styles.tech}>
 								<img
 									loading="lazy"
+									src={require("../Images/typescript.png")}
+									alt="typescript"
+								/>
+								TypeScript
+							</div>
+							<div className={styles.tech}>
+								<img
+									loading="lazy"
 									src={require("../Images/dart.png")}
 									alt="dart"
 								/>
@@ -115,10 +123,18 @@ export const Skills = () => {
 							<div className={styles.tech}>
 								<img
 									loading="lazy"
+									src={require("../Images/nextjs.png")}
+									alt="nextjs"
+								/>
+								Next.js
+							</div>
+							<div className={styles.tech}>
+								<img
+									loading="lazy"
 									src={require("../Images/mern.png")}
 									alt="mern"
 								/>
-								MERN Stack
+								MERN
 							</div>
 							<div className={styles.tech}>
 								<img
@@ -246,6 +262,14 @@ export const Skills = () => {
 									alt="thunderclient"
 								/>
 								Thunder Client
+							</div>
+							<div className={styles.tech}>
+								<img
+									loading="lazy"
+									src={require("../Images/postman.png")}
+									alt="postman"
+								/>
+								Postman
 							</div>
 						</div>
 					</div>
