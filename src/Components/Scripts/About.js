@@ -58,7 +58,7 @@ export const About = () => {
 					user friendly solutions.
 				</div>
 				<a
-					href="/portfolio/Amar_Kumar.pdf"
+					href="https://drive.google.com/file/d/1sro1gQkbT-yCl10AT2uDjn4zmrMYKqiN/view?usp=sharing"
 					target="_blank"
 					rel="noreferrer"
 					className={styles.resume}
