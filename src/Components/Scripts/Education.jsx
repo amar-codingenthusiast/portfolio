@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import styles from "../Styles/Timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import styles from "../Styles/Timeline.module.css";
+import educationData from "../../data/education.json";
+import { getAsset } from "../../utils/assets";
 
 export const Education = () => {
 	useEffect(() => {
@@ -16,94 +18,41 @@ export const Education = () => {
 				my knowledge and growth.
 			</p>
 			<div className={styles.timeline}>
-				<div className={`${styles.box} ${styles.left_box}`}>
-					<img
-						className={styles.icons}
-						loading="lazy"
-						src={require("../Images/lpu.png")}
-						alt="brabu"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>
-							Master of Computer Applications
-						</p>
-						<p className={styles.subtitle}>
-							University: LPU, Jalandhar
-						</p>
-						<p className={styles.description}>
-							Pursuing since July 2025 through <b>Online Mode.</b>{" "}
-							This program covers core computer science subjects
-							with a
-							<b>Full Stack Web Development Specialization,</b>{" "}
-							strengthening my skills in application development,
-							system design, and practical problem-solving.
-						</p>
-						<span className={styles.left_box_arrow}></span>
-					</div>
-				</div>
-				<div className={`${styles.box} ${styles.right_box}`}>
-					<img
-						className={styles.icons}
-						loading="lazy"
-						src={require("../Images/brabu.jpg")}
-						alt="brabu"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>Bachelor of Commerce</p>
-						<p className={styles.subtitle}>
-							University: BRABU, Muzaffarpur
-						</p>
-						<p className={styles.description}>
-							Graduated with 71.13% marks in 2020 from MS College,
-							Motihari. This degree provided a strong foundation
-							in business principles and practices, enhancing my
-							analytical and financial skills.
-						</p>
-						<span className={styles.right_box_arrow}></span>
-					</div>
-				</div>
-				<div className={`${styles.box} ${styles.left_box}`}>
-					<img
-						className={styles.icons}
-						loading="lazy"
-						src={require("../Images/bseb.jpg")}
-						alt="bseb"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>Intermediate of Commerce</p>
-						<p className={styles.subtitle}>Board: BSEB, Patna</p>
-						<p>
-							Completed with 69.20% marks in 2017 from MHK
-							College, Motihari. Focused on advanced commerce
-							subjects, preparing me for higher education and a
-							career in business and finance.
-						</p>
-						<span className={styles.left_box_arrow}></span>
-					</div>
-				</div>
-				<div className={`${styles.box} ${styles.right_box}`}>
-					<img
-						className={styles.icons}
-						loading="lazy"
-						src={require("../Images/bseb.jpg")}
-						alt="bseb"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>Matriculation</p>
-						<p className={styles.subtitle}>Board: BSEB, Patna</p>
-						<p>
-							Achieved 75.20% marks in 2015 from Gopal Sah School,
-							Motihari. This stage of education laid the
-							groundwork for my academic journey, emphasizing core
-							subjects and essential skills.
-						</p>
-						<span className={styles.right_box_arrow}></span>
-					</div>
-				</div>
+				{educationData.map((edu, index) => {
+					const isLeft = index % 2 === 0;
+					return (
+						<div
+							key={index}
+							className={`${styles.box} ${
+								isLeft ? styles.left_box : styles.right_box
+							}`}
+						>
+							<img
+								className={styles.icons}
+								loading="lazy"
+								src={getAsset(edu.icon)}
+								alt={edu.title}
+								data-aos="zoom-in"
+							/>
+							<div className={styles.text_box} data-aos="fade-up">
+								<p className={styles.title}>{edu.title}</p>
+								<p className={styles.subtitle}>
+									{edu.subtitle}
+								</p>
+								<p className={styles.description}>
+									{edu.description}
+								</p>
+								<span
+									className={
+										isLeft
+											? styles.left_box_arrow
+											: styles.right_box_arrow
+									}
+								></span>
+							</div>
+						</div>
+					);
+				})}
 			</div>
 		</div>
 	);

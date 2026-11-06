@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Resume",
+		"url": "https://drive.google.com/file/d/1sro1gQkbT-yCl10AT2uDjn4zmrMYKqiN/view?usp=sharing",
+		"iconClass": "fa-solid fa-file"
+	},
+	{
+		"title": "GitHub",
+		"url": "https://www.github.com/amar-codingenthusiast",
+		"iconClass": "fa-brands fa-github"
+	},
+	{
+		"title": "LeetCode",
+		"url": "https://www.leetcode.com/amar-codingenthusiast/",
+		"isLeetCodeSvg": true
+	},
+	{
+		"title": "LinkedIn",
+		"url": "https://www.linkedin.com/in/amar-codingenthusiast/",
+		"iconClass": "fa-brands fa-linkedin"
+	},
+	{
+		"title": "Email",
+		"url": "mailto:amar.codingenthusiast@gmail.com",
+		"iconClass": "fa-solid fa-envelope"
+	},
+	{
+		"title": "Phone No.",
+		"url": "tel:+916200110130",
+		"iconClass": "fa-solid fa-phone"
+	},
+	{
+		"title": "Address",
+		"url": "https://maps.app.goo.gl/FujDqcBCqbbX7rsQA",
+		"iconClass": "fa-solid fa-location-dot"
+	}
+]
+

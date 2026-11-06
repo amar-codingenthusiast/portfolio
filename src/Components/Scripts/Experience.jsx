@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import styles from "../Styles/Timeline.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import styles from "../Styles/Timeline.module.css";
+import experienceData from "../../data/experience.json";
+import { getAsset } from "../../utils/assets";
 
 export const Experience = () => {
 	useEffect(() => {
@@ -16,116 +18,51 @@ export const Experience = () => {
 				across technologies and roles.
 			</p>
 			<div className={styles.timeline}>
-				<div className={`${styles.box} ${styles.left_box}`}>
-					<img
-						className={styles.icons}
-						loading="lazy"
-						src={require("../Images/fuvion_techsys.jpg")}
-						alt="fuvion_techsys"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>Software Developer</p>
-						<p className={styles.subtitle}>Fuvion Techsys</p>
-						<p className={styles.italic}>
-							(March 2025 - Present, Full-time, Remote)
-						</p>
-						<p className={styles.description}>
-							Leading the design and development of mobile and web
-							applications with a focus on performance,
-							scalability and maintainability. Implemented CI/CD
-							pipelines using GitHub Actions, integrated Docker
-							for containerized deployments, explored Kafka for
-							data streaming and contributed interactive data
-							visualizations using D3.js to enhance user insights
-							and analytics.
-						</p>
-						<div className={styles.button_box}>
-							<a
-								href="https://fuviontechsys.com"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Visit Website
-							</a>
+				{experienceData.map((exp, index) => {
+					const isLeft = index % 2 === 0;
+					return (
+						<div
+							key={index}
+							className={`${styles.box} ${
+								isLeft ? styles.left_box : styles.right_box
+							}`}
+						>
+							<img
+								className={styles.icons}
+								loading="lazy"
+								src={getAsset(exp.icon)}
+								alt={exp.company}
+								data-aos="zoom-in"
+							/>
+							<div className={styles.text_box} data-aos="fade-up">
+								<p className={styles.title}>{exp.title}</p>
+								<p className={styles.subtitle}>{exp.company}</p>
+								<p className={styles.italic}>{exp.period}</p>
+								<p className={styles.description}>
+									{exp.description}
+								</p>
+								{exp.button && (
+									<div className={styles.button_box}>
+										<a
+											href={exp.button.url}
+											target="_blank"
+											rel="noreferrer"
+										>
+											{exp.button.label}
+										</a>
+									</div>
+								)}
+								<span
+									className={
+										isLeft
+											? styles.left_box_arrow
+											: styles.right_box_arrow
+									}
+								></span>
+							</div>
 						</div>
-						<span className={styles.left_box_arrow}></span>
-					</div>
-				</div>
-				<div className={`${styles.box} ${styles.right_box}`}>
-					<img
-						className={styles.icons}
-						loading="lazy"
-						src={require("../Images/fuvion_techsys.jpg")}
-						alt="fuvion_techsys"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>
-							Trainee Software Developer
-						</p>
-						<p className={styles.subtitle}>Fuvion Techsys</p>
-						<p className={styles.italic}>
-							(Sept 2024 - March 2025, Full-time, Remote)
-						</p>
-						<p className={styles.description}>
-							Gained hands-on experience developing mobile
-							applications using Flutter and Firebase and web
-							applications using the MERN stack. Built responsive,
-							scalable solutions, collaborated with
-							cross-functional teams, optimized workflows and
-							contributed to feature development, testing and bug
-							fixes to ensure high-quality, maintainable and
-							user-friendly software.
-						</p>
-						<div className={styles.button_box}>
-							<a
-								href="https://fuviontechsys.com"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Visit Website
-							</a>
-						</div>
-						<span className={styles.right_box_arrow}></span>
-					</div>
-				</div>
-				<div className={`${styles.box} ${styles.left_box}`}>
-					<img
-						className={styles.icons}
-						loading="lazy"
-						src={require("../Images/ten.jpg")}
-						alt="ten"
-						data-aos="zoom-in"
-					/>
-					<div className={styles.text_box} data-aos="fade-up">
-						<p className={styles.title}>MERN Stack Developer</p>
-						<p className={styles.subtitle}>
-							The Entrepreneurship Network
-						</p>
-						<p className={styles.italic}>
-							(June 2024 - Sept 2024, Internship, Remote)
-						</p>
-						<p className={styles.description}>
-							I led full-stack projects - including TEN AI
-							Consulting, AI Resume Builder, TEN Marketing, TEN
-							Mentor Site and TEN Employee Management -
-							integrating routes, schemas, databases; enhancing
-							frontend components, fixing bugs and optimizing
-							deployments.
-						</p>
-						<div className={styles.button_box}>
-							<a
-								href="https://www.entrepreneurshipnetwork.net/"
-								target="_blank"
-								rel="noreferrer"
-							>
-								Visit Website
-							</a>
-						</div>
-						<span className={styles.left_box_arrow}></span>
-					</div>
-				</div>
+					);
+				})}
 			</div>
 		</div>
 	);

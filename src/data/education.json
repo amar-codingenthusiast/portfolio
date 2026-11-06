@@ -1,0 +1,27 @@
+[
+	{
+		"title": "Master of Computer Applications",
+		"subtitle": "University: LPU, Jalandhar",
+		"icon": "lpu.png",
+		"description": "Pursuing since July 2025 through Online Mode. This program covers core computer science subjects with a Full Stack Web Development Specialization, strengthening my skills in application development, system design, and practical problem-solving."
+	},
+	{
+		"title": "Bachelor of Commerce",
+		"subtitle": "University: BRABU, Muzaffarpur",
+		"icon": "brabu.jpg",
+		"description": "Graduated with 71.13% marks in 2020 from MS College, Motihari. This degree provided a strong foundation in business principles and practices, enhancing my analytical and financial skills."
+	},
+	{
+		"title": "Intermediate of Commerce",
+		"subtitle": "Board: BSEB, Patna",
+		"icon": "bseb.jpg",
+		"description": "Completed with 69.20% marks in 2017 from MHK College, Motihari. Focused on advanced commerce subjects, preparing me for higher education and a career in business and finance."
+	},
+	{
+		"title": "Matriculation",
+		"subtitle": "Board: BSEB, Patna",
+		"icon": "bseb.jpg",
+		"description": "Achieved 75.20% marks in 2015 from Gopal Sah School, Motihari. This stage of education laid the groundwork for my academic journey, emphasizing core subjects and essential skills."
+	}
+]
+

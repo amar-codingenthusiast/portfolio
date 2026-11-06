@@ -1,0 +1,15 @@
+{
+	"greeting": "Hi, I am",
+	"name": "Amar Kumar",
+	"typewriterWords": [
+		"Full Stack Developer",
+		"MERN Stack Developer",
+		"Flutter Developer",
+		"Java Developer",
+		"C++ Developer"
+	],
+	"bio": "I specialize in full-stack web development with the MERN stack and mobile app development using Flutter and Firebase. Passionate about building scalable and efficient applications, I enjoy learning new technologies and optimizing workflows. With a strong foundation in software development principles, I strive to create impactful and user friendly solutions.",
+	"resumeUrl": "https://drive.google.com/file/d/1sro1gQkbT-yCl10AT2uDjn4zmrMYKqiN/view?usp=sharing",
+	"profileImage": "mypic.jpg"
+}
+

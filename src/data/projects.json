@@ -1,0 +1,117 @@
+[
+	{
+		"title": "Jobstock",
+		"subtitle": "A Job Portal Application and Website",
+		"icon": "jobstock.png",
+		"media": "jobstock.mp4",
+		"tags": ["flutter", "firebase", "react", "node.js", "nodemailer", "cron job"],
+		"description": "Jobstock offers a seamless hiring experience with a Flutter mobile app for job seekers and a React-based web platform for employers and admins. Candidates can create profiles, search for jobs and apply directly through the app, while companies can post listings, filter applicants and manage recruitment via the web portal. Automated emails and scheduled tasks keep users updated, ensuring a smooth, efficient and scalable job search and hiring process.",
+		"buttons": [
+			{
+				"label": "View App",
+				"url": "https://play.google.com/store/apps/details?id=com.fuvion_techsys.jobstock"
+			},
+			{
+				"label": "Visit Website",
+				"url": "https://jobstock.fuviontechsys.com"
+			}
+		]
+	},
+	{
+		"title": "Employee Dashboard",
+		"subtitle": "An internal HR platform",
+		"icon": "employee_dashboard.png",
+		"media": "employee-dashboard.mp4",
+		"tags": ["mern", "tailwind css", "jwt", "bcrypt.js", "nodemailer", "cron job", "vps hosting", "github actions"],
+		"description": "Employee Dashboard is an internal HR management platform designed to streamline organizational workflows. It allows administrators to create and manage employee profiles, assign tasks, handle leave requests, generate salary slips, post announcements, and resolve support tickets. Employees access personalized dashboards to track their work, view updates, and monitor performance. The platform focuses on secure access, efficient communication, and centralized management of day-to-day HR operations.",
+		"buttons": [
+			{
+				"label": "Visit Website",
+				"url": "https://employee-dashboard.fuviontechsys.com"
+			}
+		]
+	},
+	{
+		"title": "TEN AI Consulting",
+		"subtitle": "A Comprehensive Business Website",
+		"icon": "rocket.jpg",
+		"media": "aiconsulting.mp4",
+		"tags": ["vite", "react", "tailwind css", "react icons", "aos", "calendly"],
+		"description": "TEN AI Consulting is a sleek platform for The Entrepreneurship Network, featuring 16 sections, including services, testimonials, FAQs and a Calendly-powered contact form. As team lead, I contributed to development, design refinement and functionality integration to enhance user experience. I also managed deployment, optimization and animations, ensuring fast load times and a smooth, responsive interface.",
+		"buttons": [
+			{
+				"label": "Visit Website",
+				"url": "https://aiconsulting.entrepreneurshipnetwork.net"
+			}
+		]
+	},
+	{
+		"title": "AI Resume Builder",
+		"subtitle": "A Dynamic Resume Creation Platform",
+		"icon": "resume.jpg",
+		"media": "resumebuilder.mp4",
+		"tags": ["mern", "tailwind css", "jwt", "bcrypt.js", "google gemini"],
+		"description": "AI Resume Builder simplifies professional resume creation with an intuitive, form-driven workflow for freshers and experienced professionals. As backend lead, I designed and implemented routes, schemas, database and server, ensuring seamless integration. I also contributed to frontend bug fixes and design improvements, optimizing the user experience. The platform allows users to build, edit and download polished resume PDFs effortlessly.",
+		"buttons": [
+			{
+				"label": "Visit Website",
+				"url": "https://resume.entrepreneurshipnetwork.net"
+			}
+		]
+	},
+	{
+		"title": "iNoteBook",
+		"subtitle": "A secured notebook on cloud",
+		"icon": "inotebook.jpg",
+		"media": "inotebook.mp4",
+		"tags": ["mern", "jwt", "bcrypt.js", "bootstrap", "font awesome"],
+		"description": "iNoteBook is a secure cloud-based notebook using the MERN stack, JWT, and Bcrypt.js. It ensures user privacy with Bcrypt.js authentication and uses JWT for reliable user verification. The app allows for flexible note creation, each with timestamps for organized tracking. Bootstrap and Font Awesome enhance its design, ensuring a responsive and seamless experience across all device sizes. iNoteBook provides a secure, efficient solution for managing notes online.",
+		"buttons": [
+			{
+				"label": "Source Code",
+				"url": "https://github.com/amar-codingenthusiast/inotebook"
+			},
+			{
+				"label": "Visit Website",
+				"url": "https://amar-codingenthusiast.github.io/inotebook"
+			}
+		]
+	},
+	{
+		"title": "Google Currency Converter",
+		"subtitle": "A clone of Google Currency Converter",
+		"icon": "currencyconverter.jpg",
+		"media": "currencyconverter.mp4",
+		"tags": ["html", "css", "javascript", "fetch api", "font awesome"],
+		"description": "Currency Converter is a clone of Google Currency Converter built with HTML, CSS, JavaScript, Fetch API, and Font Awesome. It uses real-time exchange rates from the Open Exchange Rates API to convert between over 150 currencies. The app features a responsive design, ensuring usability across devices. The source code is available on GitHub for transparency and collaboration. Currency Converter provides an efficient, real-time solution for currency conversion needs.",
+		"buttons": [
+			{
+				"label": "Source Code",
+				"url": "https://github.com/amar-codingenthusiast/currency-converter"
+			},
+			{
+				"label": "Visit Website",
+				"url": "https://amar-codingenthusiast.github.io/currency-converter"
+			}
+		]
+	},
+	{
+		"title": "Banking Management System",
+		"subtitle": "A terminal based CRUD App",
+		"icon": "bank.jpg",
+		"media": "bank.mp4",
+		"tags": ["java", "oops", "jdbc", "mysql"],
+		"description": "Banking Management System is a terminal-based CRUD application developed using Java, OOP principles, JDBC, and MySQL. It features user authentication through signup and login. Users can perform banking operations like depositing, withdrawing, transferring funds, and checking their balance. The source code and a demo video are accessible on the GitHub repository. This system provides a functional and educational example of basic banking operations in a terminal interface.",
+		"buttons": [
+			{
+				"label": "Source Code",
+				"url": "https://github.com/amar-codingenthusiast/banking-management-system"
+			},
+			{
+				"label": "Demo Video",
+				"url": "https://drive.google.com/file/d/1Px-hOQVv_qf2_q06WM8p5STrthN46a5X/view?usp=drive_link"
+			}
+		]
+	}
+]
+

@@ -1,0 +1,9 @@
+[
+	{ "id": "about", "label": "About", "path": "/" },
+	{ "id": "skills", "label": "Skills", "path": "/skills" },
+	{ "id": "experience", "label": "Experience", "path": "/experience" },
+	{ "id": "projects", "label": "Projects", "path": "/projects" },
+	{ "id": "education", "label": "Education", "path": "/education" },
+	{ "id": "achievements", "label": "Achievements", "path": "/achievements" }
+]
+

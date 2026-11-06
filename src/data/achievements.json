@@ -1,0 +1,37 @@
+[
+	{
+		"title": "Custom Library Enhancement",
+		"subtitle": "Forked and fixed Multer-GridFS-Storage for reliable file uploads",
+		"icon": "forked.jpg",
+		"image": "gridfs.png",
+		"description": "Identified and resolved a persistent file upload issue in the multer-gridfs-storage library, which was no longer maintained by its original creator. By forking the repository and implementing a fix, I ensured stable and efficient file handling for production applications using MongoDB. This solution provides developers with a more reliable alternative to the outdated version.",
+		"button": {
+			"label": "View Repository",
+			"url": "https://github.com/amar-codingenthusiast/multer-gridfs-storage"
+		}
+	},
+	{
+		"title": "Fuvion Techsys Assignment",
+		"subtitle": "From assignment to official company website",
+		"icon": "fuvion_techsys.jpg",
+		"image": "fuvion_techsys.png",
+		"description": "As part of the hiring process at Fuvion Techsys, I was tasked with building a demo website to showcase my skills. The project exceeded expectations and was later adopted as the company's main website. This experience highlighted my ability to develop scalable and professional-grade websites that meet business requirements. The transition from an assignment to an official platform reinforced the impact of my work in a real-world corporate setting.",
+		"button": {
+			"label": "Visit Website",
+			"url": "https://fuviontechsys.com"
+		}
+	},
+	{
+		"title": "Certificates of Completion",
+		"subtitle": "Validated proficiency in multiple technologies",
+		"icon": "certificates.jpg",
+		"image": "certificatesofcompletion.png",
+		"aspectRatio": "16/9",
+		"description": "Earning certificates from the Great Learning Academy validates my knowledge in key programming languages and technologies. Courses completed include Java, C++, Object Oriented Programming, Data Structures & Algorithms, MySQL, MongoDB, and Full-stack Development. These certifications highlight my commitment to learning and staying updated with industry-relevant skills. They demonstrate my ability to apply new concepts effectively.",
+		"button": {
+			"label": "View Certificates",
+			"url": "https://drive.google.com/drive/folders/19dF_J9m7D1azSicfCtqNpzsw33RfOSSU?usp=drive_link"
+		}
+	}
+]
+

@@ -1,7 +1,9 @@
-import styles from "../Styles/About.module.css";
 import { useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import styles from "../Styles/About.module.css";
+import aboutData from "../../data/about.json";
+import { getAsset } from "../../utils/assets";
 
 export const About = () => {
 	useEffect(() => {
@@ -23,23 +25,19 @@ export const About = () => {
 			});
 		}
 	}, []);
+
 	const [text] = useTypewriter({
-		words: [
-			"Full Stack Developer",
-			"MERN Stack Developer",
-			"Flutter Developer",
-			"Java Developer",
-			"C++ Developer",
-		],
+		words: aboutData.typewriterWords,
 		loop: {},
 	});
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.about}>
 				<p className={styles.name}>
-					Hi, I am
+					{aboutData.greeting}
 					<br />
-					Amar Kumar
+					{aboutData.name}
 				</p>
 				<div className={styles.title}>
 					I am a{" "}
@@ -48,17 +46,9 @@ export const About = () => {
 						<Cursor />
 					</span>
 				</div>
-				<div className={styles.bio}>
-					I specialize in full-stack web development with the MERN
-					stack and mobile app development using Flutter and Firebase.
-					Passionate about building scalable and efficient
-					applications, I enjoy learning new technologies and
-					optimizing workflows. With a strong foundation in software
-					development principles, I strive to create impactful and
-					user friendly solutions.
-				</div>
+				<div className={styles.bio}>{aboutData.bio}</div>
 				<a
-					href="https://drive.google.com/file/d/1sro1gQkbT-yCl10AT2uDjn4zmrMYKqiN/view?usp=sharing"
+					href={aboutData.resumeUrl}
 					target="_blank"
 					rel="noreferrer"
 					className={styles.resume}
@@ -68,10 +58,10 @@ export const About = () => {
 			</div>
 			<img
 				className={`${styles.mypic} tilt`}
-				src={require("../Images/mypic.jpg")}
+				src={getAsset(aboutData.profileImage)}
 				alt="mypic"
 				loading="eager"
-				fetchPriority="high"
+				fetchpriority="high"
 			/>
 		</div>
 	);

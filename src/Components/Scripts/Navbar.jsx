@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink, useNavigate, useLocation } from "react-router-dom";
 import styles from "../Styles/Navbar.module.css";
+import navLinks from "../../data/navLinks.json";
 
 export const Navbar = () => {
 	const navigate = useNavigate();
@@ -57,6 +58,24 @@ export const Navbar = () => {
 		}
 	}, [activeLink, navigate, location.pathname]);
 
+	const renderNavItems = () =>
+		navLinks.map((item) => (
+			<li key={item.id}>
+				<NavLink
+					to={item.path}
+					className={
+						activeLink === item.id ? styles.active : styles.anchor
+					}
+					onClick={() => {
+						scrollToSection(item.id);
+						setActiveLink(item.id);
+					}}
+				>
+					{item.label}
+				</NavLink>
+			</li>
+		));
+
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.container}>
@@ -77,89 +96,7 @@ export const Navbar = () => {
 				<div className={styles.menu_icon} onClick={handleIsOpen}>
 					{!isOpen ? "\u2630" : "\u2716"}
 				</div>
-				<ul className={styles.collapse}>
-					<li>
-						<NavLink
-							to="/"
-							className={
-								activeLink === "about"
-									? styles.active
-									: styles.anchor
-							}
-							onClick={() => {
-								scrollToSection("about");
-								setActiveLink("about");
-							}}
-						>
-							About
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							to="/skills"
-							className={
-								activeLink === "skills"
-									? styles.active
-									: styles.anchor
-							}
-							onClick={() => scrollToSection("skills")}
-						>
-							Skills
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							to="/experience"
-							className={
-								activeLink === "experience"
-									? styles.active
-									: styles.anchor
-							}
-							onClick={() => scrollToSection("experience")}
-						>
-							Experience
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							to="/projects"
-							className={
-								activeLink === "projects"
-									? styles.active
-									: styles.anchor
-							}
-							onClick={() => scrollToSection("projects")}
-						>
-							Projects
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							to="/education"
-							className={
-								activeLink === "education"
-									? styles.active
-									: styles.anchor
-							}
-							onClick={() => scrollToSection("education")}
-						>
-							Education
-						</NavLink>
-					</li>
-					<li>
-						<NavLink
-							to="/achievements"
-							className={
-								activeLink === "achievements"
-									? styles.active
-									: styles.anchor
-							}
-							onClick={() => scrollToSection("achievements")}
-						>
-							Achievements
-						</NavLink>
-					</li>
-				</ul>
+				<ul className={styles.collapse}>{renderNavItems()}</ul>
 				<div className={styles.collapse}>
 					<a
 						className={styles.github}
@@ -175,97 +112,7 @@ export const Navbar = () => {
 				<div className={styles.overlay} onClick={handleIsOpen}></div>
 			)}
 			<div className={`${styles.dropdown} ${isOpen ? styles.open : ""}`}>
-				<li>
-					<NavLink
-						to="/"
-						className={
-							activeLink === "about"
-								? styles.active
-								: styles.anchor
-						}
-						onClick={() => {
-							scrollToSection("about");
-							setActiveLink("about");
-						}}
-					>
-						About
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to="/skills"
-						className={
-							activeLink === "skills"
-								? styles.active
-								: styles.anchor
-						}
-						onClick={() => scrollToSection("skills")}
-					>
-						Skills
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to="/experience"
-						className={
-							activeLink === "experience"
-								? styles.active
-								: styles.anchor
-						}
-						onClick={() => scrollToSection("experience")}
-					>
-						Experience
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to="/projects"
-						className={
-							activeLink === "projects"
-								? styles.active
-								: styles.anchor
-						}
-						onClick={() => scrollToSection("projects")}
-					>
-						Projects
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to="/education"
-						className={
-							activeLink === "education"
-								? styles.active
-								: styles.anchor
-						}
-						onClick={() => scrollToSection("education")}
-					>
-						Education
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to="/achievements"
-						className={
-							activeLink === "achievements"
-								? styles.active
-								: styles.anchor
-						}
-						onClick={() => scrollToSection("achievements")}
-					>
-						Achievements
-					</NavLink>
-				</li>
-				<li>
-					<a
-						className={styles.github}
-						href="https://www.github.com/amar-codingenthusiast"
-						target="_blank"
-						rel="noreferrer"
-					>
-						GitHub Profile
-					</a>
-				</li>
+				{renderNavItems()}
 			</div>
 		</nav>
 	);
