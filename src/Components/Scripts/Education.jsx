@@ -34,7 +34,10 @@ export const Education = () => {
 								alt={edu.title}
 								data-aos="zoom-in"
 							/>
-							<div className={styles.text_box} data-aos="fade-up">
+							<div
+								className={styles.text_box}
+								data-aos={isLeft ? "fade-right" : "fade-left"}
+							>
 								<p className={styles.title}>{edu.title}</p>
 								<p className={styles.subtitle}>
 									{edu.subtitle}

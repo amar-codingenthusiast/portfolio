@@ -3,7 +3,16 @@
 		"title": "Software Developer",
 		"company": "Fuvion Techsys",
 		"icon": "fuvion_techsys.jpg",
-		"period": "(March 2025 - Present, Full-time, Remote)",
+		"period": "March 2025 - Present",
+		"type": "Full-time • Remote",
+		"skills": [
+			"Next.js",
+			"Flutter",
+			"Docker",
+			"Apache Kafka",
+			"GitHub Actions",
+			"D3.js"
+		],
 		"description": "Leading the design and development of mobile and web applications with a focus on performance, scalability and maintainability. Implemented CI/CD pipelines using GitHub Actions, integrated Docker for containerized deployments, explored Kafka for data streaming and contributed interactive data visualizations using D3.js to enhance user insights and analytics.",
 		"button": {
 			"label": "Visit Website",
@@ -14,7 +23,15 @@
 		"title": "Trainee Software Developer",
 		"company": "Fuvion Techsys",
 		"icon": "fuvion_techsys.jpg",
-		"period": "(Sept 2024 - March 2025, Full-time, Remote)",
+		"period": "Sept 2024 - March 2025",
+		"type": "Full-time • Remote",
+		"skills": [
+			"MERN Stack",
+			"Flutter",
+			"Firebase",
+			"REST APIs",
+			"Testing & Bug Fixes"
+		],
 		"description": "Gained hands-on experience developing mobile applications using Flutter and Firebase and web applications using the MERN stack. Built responsive, scalable solutions, collaborated with cross-functional teams, optimized workflows and contributed to feature development, testing and bug fixes to ensure high-quality, maintainable and user-friendly software.",
 		"button": {
 			"label": "Visit Website",
@@ -25,7 +42,15 @@
 		"title": "MERN Stack Developer",
 		"company": "The Entrepreneurship Network",
 		"icon": "ten.jpg",
-		"period": "(June 2024 - Sept 2024, Internship, Remote)",
+		"period": "June 2024 - Sept 2024",
+		"type": "Internship • Remote",
+		"skills": [
+			"MERN Stack",
+			"Tailwind CSS",
+			"Team Lead",
+			"AI Integration",
+			"Database Design"
+		],
 		"description": "I led full-stack projects - including TEN AI Consulting, AI Resume Builder, TEN Marketing, TEN Mentor Site and TEN Employee Management - integrating routes, schemas, databases; enhancing frontend components, fixing bugs and optimizing deployments.",
 		"button": {
 			"label": "Visit Website",
@@ -33,4 +58,3 @@
 		}
 	}
 ]
-

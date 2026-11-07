@@ -3,9 +3,14 @@
 	z-index: 1000;
 	top: 0;
 	width: 100%;
-	background-color: rgb(9, 9, 23);
+	background-color: rgba(9, 9, 23, 0.85);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+	transition: background-color 0.3s ease, border-color 0.3s ease;
 	color: white;
 }
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -16,6 +21,7 @@
 	align-items: center;
 	position: relative;
 }
+
 .name {
 	display: flex;
 	align-items: center;
@@ -23,84 +29,158 @@
 	font-weight: 500;
 	color: white;
 	text-decoration: none;
+	transition: opacity 0.2s ease;
 }
+
+.name:hover {
+	opacity: 0.9;
+}
+
 .brackets {
 	color: rgb(133, 76, 230);
 	font-size: 32px;
 }
+
 .slash {
 	color: rgb(133, 76, 230);
 }
+
 .menu_icon {
 	display: none;
 	cursor: pointer;
 	font-size: 24px;
+	color: white;
+	transition: color 0.3s ease, transform 0.2s ease;
 }
+
+.menu_icon:hover {
+	color: rgb(133, 76, 230);
+}
+
 .collapse {
 	list-style-type: none;
 	display: flex;
-	gap: 20px;
+	align-items: center;
+	gap: 24px;
 }
+
+.collapse li a {
+	position: relative;
+	padding: 6px 2px;
+}
+
+.collapse .anchor::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 50%;
+	width: 0;
+	height: 2px;
+	background: rgb(133, 76, 230);
+	border-radius: 2px;
+	transition: width 0.3s ease, left 0.3s ease;
+}
+
+.collapse .anchor:hover::after {
+	width: 100%;
+	left: 0;
+}
+
+.collapse .active::after {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: rgb(133, 76, 230);
+	border-radius: 2px;
+	box-shadow: 0 0 10px rgba(133, 76, 230, 0.8), 0 0 4px rgba(133, 76, 230, 0.5);
+}
+
 .anchor {
-	color: white;
+	color: rgba(255, 255, 255, 0.85);
 	text-decoration: none;
-	transition: all ease-in-out 0.3s;
+	font-weight: 500;
+	transition: color 0.3s ease;
 }
+
+.anchor:hover {
+	color: rgb(133, 76, 230);
+}
+
+.active {
+	color: rgb(133, 76, 230);
+	text-decoration: none;
+	font-weight: 500;
+}
+
 .github {
-	padding: 10px 20px;
+	display: inline-block;
+	padding: 10px 24px;
 	font-weight: 500;
 	border-radius: 20px;
 	border: rgb(133, 76, 230) 2px solid;
 	color: rgb(133, 76, 230);
 	text-decoration: none;
-	transition: all ease-in-out 0.5s;
+	white-space: nowrap;
+	transition: all ease-in-out 0.4s;
 }
-.anchor:hover {
-	color: rgb(133, 76, 230);
-	transition: all ease-in-out 0.3s;
-}
+
 .github:hover {
 	color: white;
 	background-color: rgb(133, 76, 230);
-	transition: all ease-in-out 0.5s;
+	box-shadow: 0 0 16px rgba(133, 76, 230, 0.5);
 }
-.active {
-	color: rgb(133, 76, 230);
-	text-decoration: none;
-}
+
 .overlay {
 	position: fixed;
 	top: 80px;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
 }
+
 .dropdown {
 	position: absolute;
-	top: 70px;
+	top: 80px;
 	width: 100%;
-	background-color: rgba(19, 19, 31, 0.7);
+	background-color: rgba(14, 14, 28, 0.94);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(133, 76, 230, 0.25);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 	transform: translateY(-140%);
 	transition: transform 0.3s ease-in-out;
 }
+
 .open {
 	transform: translateY(0);
 }
+
 .dropdown li {
 	list-style-type: none;
-	padding: 5px 30px;
-}
-.dropdown li:last-child {
-	padding: 15px 30px;
+	padding: 8px 30px;
 }
 
-@media screen and (max-width: 900px) {
+.dropdown li:last-child {
+	padding: 16px 30px 20px;
+}
+
+.dropdown .active {
+	text-shadow: 0 0 12px rgba(133, 76, 230, 0.6);
+	font-weight: 600;
+}
+
+@media screen and (max-width: 950px) {
 	.collapse {
 		display: none;
 	}
+
 	.menu_icon {
 		display: block;
 	}

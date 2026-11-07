@@ -25,7 +25,6 @@ export const Skills = () => {
 		}
 	}, []);
 
-	// Chunk categories into rows of 2 to preserve existing CSS layout
 	const rows = [];
 	for (let i = 0; i < skillsData.length; i += 2) {
 		rows.push(skillsData.slice(i, i + 2));
@@ -46,7 +45,9 @@ export const Skills = () => {
 								className={`${styles.cards} tilt`}
 								key={category.category}
 							>
-								<div>{category.category}</div>
+								<h3 className={styles.category_title}>
+									{category.category}
+								</h3>
 								<div className={styles.tech_box}>
 									{category.skills.map((skill) => (
 										<div

@@ -10,14 +10,14 @@
 		"iconClass": "fa-brands fa-github"
 	},
 	{
-		"title": "LeetCode",
-		"url": "https://www.leetcode.com/amar-codingenthusiast/",
-		"isLeetCodeSvg": true
-	},
-	{
 		"title": "LinkedIn",
 		"url": "https://www.linkedin.com/in/amar-codingenthusiast/",
 		"iconClass": "fa-brands fa-linkedin"
+	},
+	{
+		"title": "LeetCode",
+		"url": "https://www.leetcode.com/amar-codingenthusiast/",
+		"isLeetCodeSvg": true
 	},
 	{
 		"title": "Email",
@@ -31,8 +31,7 @@
 	},
 	{
 		"title": "Address",
-		"url": "https://maps.app.goo.gl/FujDqcBCqbbX7rsQA",
+		"url": "https://maps.app.goo.gl/XtbFVojFTF9Siujf9",
 		"iconClass": "fa-solid fa-location-dot"
 	}
 ]
-

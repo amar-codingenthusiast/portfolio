@@ -34,7 +34,10 @@ export const Achievements = () => {
 								alt={item.title}
 								data-aos="zoom-in"
 							/>
-							<div className={styles.text_box} data-aos="fade-up">
+							<div
+								className={styles.text_box}
+								data-aos={isLeft ? "fade-right" : "fade-left"}
+							>
 								{item.image && (
 									<img
 										src={getAsset(item.image)}

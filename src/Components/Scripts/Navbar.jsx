@@ -52,9 +52,9 @@ export const Navbar = () => {
 
 	useEffect(() => {
 		if (activeLink === "about" && location.pathname !== "/") {
-			navigate("/");
+			navigate("/", { replace: true });
 		} else if (activeLink && activeLink !== "about") {
-			navigate(`/${activeLink}`);
+			navigate(`/${activeLink}`, { replace: true });
 		}
 	}, [activeLink, navigate, location.pathname]);
 
@@ -93,8 +93,16 @@ export const Navbar = () => {
 						<span className={styles.brackets}>&gt;</span>
 					</Link>
 				</div>
-				<div className={styles.menu_icon} onClick={handleIsOpen}>
-					{!isOpen ? "\u2630" : "\u2716"}
+				<div
+					className={styles.menu_icon}
+					onClick={handleIsOpen}
+					aria-label="Toggle navigation"
+				>
+					<i
+						className={`fa-solid ${
+							!isOpen ? "fa-bars" : "fa-xmark"
+						}`}
+					></i>
 				</div>
 				<ul className={styles.collapse}>{renderNavItems()}</ul>
 				<div className={styles.collapse}>
@@ -113,6 +121,16 @@ export const Navbar = () => {
 			)}
 			<div className={`${styles.dropdown} ${isOpen ? styles.open : ""}`}>
 				{renderNavItems()}
+				<li>
+					<a
+						className={styles.github}
+						href="https://www.github.com/amar-codingenthusiast"
+						target="_blank"
+						rel="noreferrer"
+					>
+						GitHub Profile
+					</a>
+				</li>
 			</div>
 		</nav>
 	);

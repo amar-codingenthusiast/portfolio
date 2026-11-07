@@ -4,8 +4,15 @@
 		"subtitle": "A Job Portal Application and Website",
 		"icon": "jobstock.png",
 		"media": "jobstock.mp4",
-		"tags": ["flutter", "firebase", "react", "node.js", "nodemailer", "cron job"],
-		"description": "Jobstock offers a seamless hiring experience with a Flutter mobile app for job seekers and a React-based web platform for employers and admins. Candidates can create profiles, search for jobs and apply directly through the app, while companies can post listings, filter applicants and manage recruitment via the web portal. Automated emails and scheduled tasks keep users updated, ensuring a smooth, efficient and scalable job search and hiring process.",
+		"tags": [
+			"flutter",
+			"firebase",
+			"react",
+			"node.js",
+			"nodemailer",
+			"cron job"
+		],
+		"description": "A full-featured recruitment platform featuring a Flutter mobile app for job seekers and a React web dashboard for employers. Includes automated email notifications, cron-driven candidate updates, resume management, and streamlined applicant filtering for modern hiring workflows.",
 		"buttons": [
 			{
 				"label": "View App",
@@ -22,8 +29,16 @@
 		"subtitle": "An internal HR platform",
 		"icon": "employee_dashboard.png",
 		"media": "employee-dashboard.mp4",
-		"tags": ["mern", "tailwind css", "jwt", "bcrypt.js", "nodemailer", "cron job", "vps hosting", "github actions"],
-		"description": "Employee Dashboard is an internal HR management platform designed to streamline organizational workflows. It allows administrators to create and manage employee profiles, assign tasks, handle leave requests, generate salary slips, post announcements, and resolve support tickets. Employees access personalized dashboards to track their work, view updates, and monitor performance. The platform focuses on secure access, efficient communication, and centralized management of day-to-day HR operations.",
+		"tags": [
+			"mern",
+			"jwt",
+			"bcrypt.js",
+			"nodemailer",
+			"cron job",
+			"vps hosting",
+			"github actions"
+		],
+		"description": "An enterprise HR management platform designed to streamline internal company workflows. Features task assignment, leave management, automated salary slip generation, support ticketing, and role-based dashboards built with the MERN stack, secure JWT authentication, and VPS deployment via GitHub Actions.",
 		"buttons": [
 			{
 				"label": "Visit Website",
@@ -36,8 +51,15 @@
 		"subtitle": "A Comprehensive Business Website",
 		"icon": "rocket.jpg",
 		"media": "aiconsulting.mp4",
-		"tags": ["vite", "react", "tailwind css", "react icons", "aos", "calendly"],
-		"description": "TEN AI Consulting is a sleek platform for The Entrepreneurship Network, featuring 16 sections, including services, testimonials, FAQs and a Calendly-powered contact form. As team lead, I contributed to development, design refinement and functionality integration to enhance user experience. I also managed deployment, optimization and animations, ensuring fast load times and a smooth, responsive interface.",
+		"tags": [
+			"vite",
+			"react",
+			"tailwind css",
+			"react icons",
+			"aos",
+			"calendly"
+		],
+		"description": "A dynamic business consulting platform built for The Entrepreneurship Network featuring 16 interactive sections and Calendly scheduling. Led frontend architecture, AOS scroll animations, responsive UI design, and performance optimizations to deliver an engaging, high-speed user experience.",
 		"buttons": [
 			{
 				"label": "Visit Website",
@@ -50,8 +72,14 @@
 		"subtitle": "A Dynamic Resume Creation Platform",
 		"icon": "resume.jpg",
 		"media": "resumebuilder.mp4",
-		"tags": ["mern", "tailwind css", "jwt", "bcrypt.js", "google gemini"],
-		"description": "AI Resume Builder simplifies professional resume creation with an intuitive, form-driven workflow for freshers and experienced professionals. As backend lead, I designed and implemented routes, schemas, database and server, ensuring seamless integration. I also contributed to frontend bug fixes and design improvements, optimizing the user experience. The platform allows users to build, edit and download polished resume PDFs effortlessly.",
+		"tags": [
+			"mern",
+			"tailwind css",
+			"jwt",
+			"bcrypt.js",
+			"google gemini"
+		],
+		"description": "An intelligent resume creation tool powered by Google Gemini AI and the MERN stack. Led backend API design, database schemas, and PDF generation workflows, enabling job seekers to generate, customize, and export ATS-friendly resumes seamlessly in minutes.",
 		"buttons": [
 			{
 				"label": "Visit Website",
@@ -64,8 +92,14 @@
 		"subtitle": "A secured notebook on cloud",
 		"icon": "inotebook.jpg",
 		"media": "inotebook.mp4",
-		"tags": ["mern", "jwt", "bcrypt.js", "bootstrap", "font awesome"],
-		"description": "iNoteBook is a secure cloud-based notebook using the MERN stack, JWT, and Bcrypt.js. It ensures user privacy with Bcrypt.js authentication and uses JWT for reliable user verification. The app allows for flexible note creation, each with timestamps for organized tracking. Bootstrap and Font Awesome enhance its design, ensuring a responsive and seamless experience across all device sizes. iNoteBook provides a secure, efficient solution for managing notes online.",
+		"tags": [
+			"mern",
+			"jwt",
+			"bcrypt.js",
+			"bootstrap",
+			"font awesome"
+		],
+		"description": "A secure cloud note-taking web application built with MongoDB, Express, React, and Node.js. Features Bcrypt password hashing, JWT user authentication, timestamped CRUD note operations, and a responsive interface for safe, organized notes accessible from anywhere.",
 		"buttons": [
 			{
 				"label": "Source Code",
@@ -82,8 +116,14 @@
 		"subtitle": "A clone of Google Currency Converter",
 		"icon": "currencyconverter.jpg",
 		"media": "currencyconverter.mp4",
-		"tags": ["html", "css", "javascript", "fetch api", "font awesome"],
-		"description": "Currency Converter is a clone of Google Currency Converter built with HTML, CSS, JavaScript, Fetch API, and Font Awesome. It uses real-time exchange rates from the Open Exchange Rates API to convert between over 150 currencies. The app features a responsive design, ensuring usability across devices. The source code is available on GitHub for transparency and collaboration. Currency Converter provides an efficient, real-time solution for currency conversion needs.",
+		"tags": [
+			"html",
+			"css",
+			"javascript",
+			"fetch api",
+			"font awesome"
+		],
+		"description": "A lightweight real-time currency conversion tool inspired by Google Currency Converter. Integrates the Open Exchange Rates API to convert between 150+ global currencies with live financial data, instant calculation, and a clean, responsive mobile-friendly interface.",
 		"buttons": [
 			{
 				"label": "Source Code",
@@ -100,8 +140,13 @@
 		"subtitle": "A terminal based CRUD App",
 		"icon": "bank.jpg",
 		"media": "bank.mp4",
-		"tags": ["java", "oops", "jdbc", "mysql"],
-		"description": "Banking Management System is a terminal-based CRUD application developed using Java, OOP principles, JDBC, and MySQL. It features user authentication through signup and login. Users can perform banking operations like depositing, withdrawing, transferring funds, and checking their balance. The source code and a demo video are accessible on the GitHub repository. This system provides a functional and educational example of basic banking operations in a terminal interface.",
+		"tags": [
+			"java",
+			"oops",
+			"jdbc",
+			"mysql"
+		],
+		"description": "A robust terminal-based banking application built with core Java, Object-Oriented Programming, JDBC, and MySQL. Features secure user authentication, balance inquiries, deposit and withdrawal transactions, and inter-account funds transfers with strict relational database integrity.",
 		"buttons": [
 			{
 				"label": "Source Code",
@@ -114,4 +159,3 @@
 		]
 	}
 ]
-

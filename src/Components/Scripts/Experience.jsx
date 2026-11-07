@@ -34,13 +34,38 @@ export const Experience = () => {
 								alt={exp.company}
 								data-aos="zoom-in"
 							/>
-							<div className={styles.text_box} data-aos="fade-up">
+							<div
+								className={styles.text_box}
+								data-aos={isLeft ? "fade-right" : "fade-left"}
+							>
 								<p className={styles.title}>{exp.title}</p>
 								<p className={styles.subtitle}>{exp.company}</p>
-								<p className={styles.italic}>{exp.period}</p>
+								<div className={styles.meta_box}>
+									<span className={styles.period}>
+										<i className="fa-regular fa-calendar-days"></i>{" "}
+										{exp.period}
+									</span>
+									{exp.type && (
+										<span className={styles.badge}>
+											{exp.type}
+										</span>
+									)}
+								</div>
 								<p className={styles.description}>
 									{exp.description}
 								</p>
+								{exp.skills && exp.skills.length > 0 && (
+									<div className={styles.tags_box}>
+										{exp.skills.map((skill) => (
+											<span
+												className={styles.tags}
+												key={skill}
+											>
+												{skill}
+											</span>
+										))}
+									</div>
+								)}
 								{exp.button && (
 									<div className={styles.button_box}>
 										<a
@@ -48,7 +73,8 @@ export const Experience = () => {
 											target="_blank"
 											rel="noreferrer"
 										>
-											{exp.button.label}
+											<i className="fa-solid fa-arrow-up-right-from-square"></i>
+											<span>{exp.button.label}</span>
 										</a>
 									</div>
 								)}

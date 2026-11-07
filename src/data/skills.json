@@ -1,63 +1,186 @@
 [
 	{
-		"category": "Languages",
+		"category": "Languages & Core",
 		"skills": [
-			{ "name": "Java", "icon": "java.png" },
-			{ "name": "C++", "icon": "cpp.png" },
-			{ "name": "HTML", "icon": "html.png" },
-			{ "name": "CSS", "icon": "css.png" },
-			{ "name": "JavaScript", "icon": "javascript.png" },
-			{ "name": "TypeScript", "icon": "typescript.png" },
-			{ "name": "Dart", "icon": "dart.png" },
-			{ "name": "DSA", "icon": "dsa.png" },
-			{ "name": "OOPs", "icon": "oops.jpg" }
+			{
+				"name": "Java",
+				"icon": "java.png"
+			},
+			{
+				"name": "C++",
+				"icon": "cpp.png"
+			},
+			{
+				"name": "Python",
+				"icon": "python.png"
+			},
+			{
+				"name": "HTML",
+				"icon": "html.png"
+			},
+			{
+				"name": "CSS",
+				"icon": "css.png"
+			},
+			{
+				"name": "JavaScript",
+				"icon": "javascript.png"
+			},
+			{
+				"name": "TypeScript",
+				"icon": "typescript.png"
+			},
+			{
+				"name": "DSA",
+				"icon": "dsa.png"
+			},
+			{
+				"name": "OOPs",
+				"icon": "oops.jpg"
+			}
 		]
 	},
 	{
 		"category": "Frontend",
 		"skills": [
-			{ "name": "React.js", "icon": "reactjs.png" },
-			{ "name": "Next.js", "icon": "nextjs.png" },
-			{ "name": "MERN", "icon": "mern.png" },
-			{ "name": "Flutter", "icon": "flutter.png" },
-			{ "name": "Redux", "icon": "redux.png" },
-			{ "name": "Tailwind CSS", "icon": "tailwind.png" },
-			{ "name": "Bootstrap", "icon": "bootstrap.png" },
-			{ "name": "React Bootstrap", "icon": "reactbootstrap.png" }
+			{
+				"name": "React.js",
+				"icon": "reactjs.png"
+			},
+			{
+				"name": "Next.js",
+				"icon": "nextjs.png"
+			},
+			{
+				"name": "MERN",
+				"icon": "mern.png"
+			},
+			{
+				"name": "Flutter",
+				"icon": "flutter.png"
+			},
+			{
+				"name": "Redux",
+				"icon": "redux.png"
+			},
+			{
+				"name": "Tailwind CSS",
+				"icon": "tailwind.png"
+			},
+			{
+				"name": "Bootstrap",
+				"icon": "bootstrap.png"
+			},
+			{
+				"name": "React Bootstrap",
+				"icon": "reactbootstrap.png"
+			}
 		]
 	},
 	{
 		"category": "Backend & Database",
 		"skills": [
-			{ "name": "Node.js", "icon": "nodejs.png" },
-			{ "name": "Express.js", "icon": "expressjs.png" },
-			{ "name": "MongoDB", "icon": "mongodb.png" },
-			{ "name": "MySQL", "icon": "mysql.png" },
-			{ "name": "Firebase", "icon": "firebase.png" },
-			{ "name": "VPS Hosting", "icon": "vps.png" },
-			{ "name": "REST API", "icon": "restapi.png" },
-			{ "name": "Maven", "icon": "maven.png" },
-			{ "name": "Gradle", "icon": "gradle.png" },
-			{ "name": "Thunder Client", "icon": "thunderclient.png" },
-			{ "name": "Postman", "icon": "postman.png" }
+			{
+				"name": "Node.js",
+				"icon": "nodejs.png"
+			},
+			{
+				"name": "NestJS",
+				"icon": "nestjs.png"
+			},
+			{
+				"name": "Express.js",
+				"icon": "expressjs.png"
+			},
+			{
+				"name": "MongoDB",
+				"icon": "mongodb.png"
+			},
+			{
+				"name": "MySQL",
+				"icon": "mysql.png"
+			},
+			{
+				"name": "Firebase",
+				"icon": "firebase.png"
+			},
+			{
+				"name": "JWT",
+				"icon": "jwt.png"
+			},
+			{
+				"name": "Bcrypt",
+				"icon": "bcrypt.png"
+			},
+			{
+				"name": "VPS Hosting",
+				"icon": "vps.png"
+			},
+			{
+				"name": "REST API",
+				"icon": "restapi.png"
+			},
+			{
+				"name": "Rest Client",
+				"icon": "restclient.png"
+			},
+			{
+				"name": "Postman",
+				"icon": "postman.png"
+			}
 		]
 	},
 	{
 		"category": "Other Tools",
 		"skills": [
-			{ "name": "Git", "icon": "git.png" },
-			{ "name": "GitHub", "icon": "github.png" },
-			{ "name": "GitHub Actions", "icon": "github_actions.png" },
-			{ "name": "Hostinger", "icon": "hostinger.png" },
-			{ "name": "Vercel", "icon": "vercel.png" },
-			{ "name": "Render", "icon": "render.png" },
-			{ "name": "Docker", "icon": "docker.png" },
-			{ "name": "JDBC", "icon": "jdbc.jpg" },
-			{ "name": "VS Code", "icon": "vscode.png" },
-			{ "name": "Android Studio", "icon": "android-studio.png" },
-			{ "name": "Apache Kafka", "icon": "kafka.png" },
-			{ "name": "ChatGPT", "icon": "chatgpt.png" }
+			{
+				"name": "Git",
+				"icon": "git.png"
+			},
+			{
+				"name": "GitHub",
+				"icon": "github.png"
+			},
+			{
+				"name": "GitHub Actions",
+				"icon": "github_actions.png"
+			},
+			{
+				"name": "Hostinger",
+				"icon": "hostinger.png"
+			},
+			{
+				"name": "Vercel",
+				"icon": "vercel.png"
+			},
+			{
+				"name": "Render",
+				"icon": "render.png"
+			},
+			{
+				"name": "Docker",
+				"icon": "docker.png"
+			},
+			{
+				"name": "Linux",
+				"icon": "linux.png"
+			},
+			{
+				"name": "VS Code",
+				"icon": "vscode.png"
+			},
+			{
+				"name": "Android Studio",
+				"icon": "android-studio.png"
+			},
+			{
+				"name": "Apache Kafka",
+				"icon": "kafka.png"
+			},
+			{
+				"name": "ChatGPT",
+				"icon": "chatgpt.png"
+			}
 		]
 	}
 ]
-

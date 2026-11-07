@@ -1,15 +1,15 @@
 {
 	"greeting": "Hi, I am",
 	"name": "Amar Kumar",
+	"status": "Available for opportunities",
 	"typewriterWords": [
 		"Full Stack Developer",
 		"MERN Stack Developer",
-		"Flutter Developer",
-		"Java Developer",
-		"C++ Developer"
+		"Next.js Developer",
+		"NestJS Developer",
+		"Flutter Developer"
 	],
-	"bio": "I specialize in full-stack web development with the MERN stack and mobile app development using Flutter and Firebase. Passionate about building scalable and efficient applications, I enjoy learning new technologies and optimizing workflows. With a strong foundation in software development principles, I strive to create impactful and user friendly solutions.",
+	"bio": "A <strong>Full Stack Developer</strong> with <strong>2 years of hands-on experience</strong> based in <strong>Patna, Bihar, India</strong>, currently pursuing my <strong>MCA (2025–27)</strong>. I specialize in building end-to-end solutions using <strong>Next.js</strong>, <strong>NestJS</strong>, the <strong>MERN stack</strong>, and <strong>Flutter</strong>—transforming complex ideas into robust, scalable, and user-centric products.",
 	"resumeUrl": "https://drive.google.com/file/d/1sro1gQkbT-yCl10AT2uDjn4zmrMYKqiN/view?usp=sharing",
 	"profileImage": "mypic.jpg"
 }
-

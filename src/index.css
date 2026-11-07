@@ -6,9 +6,11 @@
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
+html,
 body {
 	background-color: rgb(9, 9, 23);
     color: white;
+	overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
