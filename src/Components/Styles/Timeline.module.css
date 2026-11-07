@@ -168,6 +168,11 @@
 	margin: 10px 0;
 }
 
+.description strong {
+	color: #afafb7;
+	font-weight: 600;
+}
+
 .tags_box {
 	display: flex;
 	flex-wrap: wrap;

@@ -5,6 +5,7 @@ import { Experience } from "./Components/Scripts/Experience";
 import { Projects } from "./Components/Scripts/Projects";
 import { Education } from "./Components/Scripts/Education";
 import { Achievements } from "./Components/Scripts/Achievements";
+import { Contact } from "./Components/Scripts/Contact";
 import { Footer } from "./Components/Scripts/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
 import styles from "./App.module.css";
@@ -37,6 +38,9 @@ function App() {
 					<Achievements />
 				</section>
 			</div>
+			<section id="contact">
+				<Contact />
+			</section>
 			<Footer />
 		</Router>
 	);

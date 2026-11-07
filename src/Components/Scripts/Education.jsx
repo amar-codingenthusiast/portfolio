@@ -11,7 +11,7 @@ export const Education = () => {
 	}, []);
 
 	return (
-		<div className={styles.container}>
+		<div id="education" className={styles.container}>
 			<p className={styles.heading}>Education</p>
 			<p className={styles.desc}>
 				The academic institutions and programs that have contributed to
@@ -42,9 +42,27 @@ export const Education = () => {
 								<p className={styles.subtitle}>
 									{edu.subtitle}
 								</p>
-								<p className={styles.description}>
-									{edu.description}
-								</p>
+								{(edu.period || edu.badge) && (
+									<div className={styles.meta_box}>
+										{edu.period && (
+											<span className={styles.period}>
+												<i className="fa-regular fa-calendar-days"></i>{" "}
+												{edu.period}
+											</span>
+										)}
+										{edu.badge && (
+											<span className={styles.badge}>
+												{edu.badge}
+											</span>
+										)}
+									</div>
+								)}
+								<p
+									className={styles.description}
+									dangerouslySetInnerHTML={{
+										__html: edu.description,
+									}}
+								/>
 								<span
 									className={
 										isLeft

@@ -88,9 +88,9 @@ export const Navbar = () => {
 							setIsOpen(false);
 						}}
 					>
-						<span className={styles.brackets}>&lt;</span>Amar
-						<span className={styles.slash}>/</span>Kumar
-						<span className={styles.brackets}>&gt;</span>
+						<span className={styles.brackets}>&lt;</span>
+						<span>Amar Kumar</span>
+						<span className={styles.brackets}>/&gt;</span>
 					</Link>
 				</div>
 				<div

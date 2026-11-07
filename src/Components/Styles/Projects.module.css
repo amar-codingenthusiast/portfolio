@@ -26,7 +26,6 @@
 	font-weight: 500;
 	color: #919299;
 	margin: 8px 10px 40px;
-	max-width: 680px;
 }
 
 .carousel_wrapper {
@@ -322,19 +321,24 @@
 	.heading {
 		font-size: 40px;
 	}
+
 	.desc {
 		font-size: 16px;
 		margin-bottom: 30px;
 	}
+
 	.carousel_page {
 		grid-template-columns: 1fr;
 	}
+
 	.nav_btn {
 		display: none;
 	}
+
 	.desktop_dots {
 		display: none;
 	}
+
 	.mobile_controls {
 		display: flex;
 		align-items: center;
@@ -342,6 +346,7 @@
 		gap: 16px;
 		margin-top: 24px;
 	}
+
 	.mobile_nav_btn {
 		width: 42px;
 		height: 42px;
@@ -358,9 +363,11 @@
 		-webkit-backdrop-filter: blur(10px);
 		transition: all 0.25s ease;
 	}
+
 	.mobile_nav_btn:hover:not(:disabled) {
 		background: linear-gradient(135deg, rgb(133, 76, 230), rgb(110, 50, 210));
 	}
+
 	.mobile_nav_btn:disabled {
 		opacity: 0.25;
 		cursor: not-allowed;

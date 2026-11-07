@@ -1,27 +1,34 @@
 [
 	{
 		"title": "Master of Computer Applications",
-		"subtitle": "University: LPU, Jalandhar",
+		"subtitle": "Lovely Professional University, Jalandhar",
 		"icon": "lpu.png",
-		"description": "Pursuing since July 2025 through Online Mode. This program covers core computer science subjects with a Full Stack Web Development Specialization, strengthening my skills in application development, system design, and practical problem-solving."
+		"period": "July 2025 - 2027",
+		"badge": "Pursuing • Online Mode",
+		"description": "Pursuing through <strong>Online Mode</strong> with a <strong>Full Stack Web Development Specialization</strong>, deepening expertise in <strong>application development</strong>, <strong>system design</strong>, and <strong>practical problem-solving</strong>."
 	},
 	{
 		"title": "Bachelor of Commerce",
-		"subtitle": "University: BRABU, Muzaffarpur",
+		"subtitle": "M.S. College, Motihari • BRABU, Muzaffarpur",
 		"icon": "brabu.jpg",
-		"description": "Graduated with 71.13% marks in 2020 from MS College, Motihari. This degree provided a strong foundation in business principles and practices, enhancing my analytical and financial skills."
+		"period": "2017 - 2020",
+		"badge": "Grade: 71.13%",
+		"description": "Graduated with <strong>71.13% marks</strong> in <strong>2020</strong> from M.S. College, Motihari, building a strong analytical foundation in <strong>business principles</strong>, <strong>financial accounting</strong>, and <strong>quantitative analysis</strong>."
 	},
 	{
 		"title": "Intermediate of Commerce",
-		"subtitle": "Board: BSEB, Patna",
+		"subtitle": "M.H.K. College, Motihari • BSEB, Patna",
 		"icon": "bseb.jpg",
-		"description": "Completed with 69.20% marks in 2017 from MHK College, Motihari. Focused on advanced commerce subjects, preparing me for higher education and a career in business and finance."
+		"period": "2015 - 2017",
+		"badge": "Grade: 69.20%",
+		"description": "Completed with <strong>69.20% marks</strong> in <strong>2017</strong> from M.H.K. College, Motihari, focusing on <strong>advanced commerce</strong>, <strong>accountancy</strong>, and <strong>economic fundamentals</strong>."
 	},
 	{
 		"title": "Matriculation",
-		"subtitle": "Board: BSEB, Patna",
+		"subtitle": "Gopal Sah School, Motihari • BSEB, Patna",
 		"icon": "bseb.jpg",
-		"description": "Achieved 75.20% marks in 2015 from Gopal Sah School, Motihari. This stage of education laid the groundwork for my academic journey, emphasizing core subjects and essential skills."
+		"period": "2014 - 2015",
+		"badge": "Grade: 75.20%",
+		"description": "Achieved <strong>75.20% marks</strong> in <strong>2015</strong> from Gopal Sah School, Motihari, laying a strong groundwork in <strong>mathematics</strong>, <strong>science</strong>, and <strong>essential academic skills</strong>."
 	}
 ]
-

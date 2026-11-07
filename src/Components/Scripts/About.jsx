@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import VanillaTilt from "vanilla-tilt";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import styles from "../Styles/About.module.css";
@@ -31,10 +32,9 @@ export const About = () => {
 		loop: {},
 	});
 
-	const handleContactClick = (e) => {
+	const handleContactClick = () => {
 		const contactSection = document.getElementById("contact");
 		if (contactSection) {
-			e.preventDefault();
 			const top =
 				contactSection.getBoundingClientRect().top +
 				window.scrollY -
@@ -79,13 +79,13 @@ export const About = () => {
 					>
 						Check Resume
 					</a>
-					<a
-						href="#contact"
+					<Link
+						to="/contact"
 						onClick={handleContactClick}
 						className={styles.contact_btn}
 					>
 						Get In Touch
-					</a>
+					</Link>
 				</div>
 			</div>
 			<img

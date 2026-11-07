@@ -20,7 +20,7 @@
 		"isLeetCodeSvg": true
 	},
 	{
-		"title": "Email",
+		"title": "Email Id",
 		"url": "mailto:amar.codingenthusiast@gmail.com",
 		"iconClass": "fa-solid fa-envelope"
 	},
@@ -30,7 +30,7 @@
 		"iconClass": "fa-solid fa-phone"
 	},
 	{
-		"title": "Address",
+		"title": "Location",
 		"url": "https://maps.app.goo.gl/XtbFVojFTF9Siujf9",
 		"iconClass": "fa-solid fa-location-dot"
 	}

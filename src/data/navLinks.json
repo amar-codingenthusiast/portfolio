@@ -4,6 +4,7 @@
 	{ "id": "experience", "label": "Experience", "path": "/experience" },
 	{ "id": "projects", "label": "Projects", "path": "/projects" },
 	{ "id": "education", "label": "Education", "path": "/education" },
-	{ "id": "achievements", "label": "Achievements", "path": "/achievements" }
+	{ "id": "achievements", "label": "Achievements", "path": "/achievements" },
+	{ "id": "contact", "label": "Contact", "path": "/contact" }
 ]
 

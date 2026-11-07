@@ -25,8 +25,9 @@
 .name {
 	display: flex;
 	align-items: center;
-	font-size: 18px;
-	font-weight: 500;
+	gap: 6px;
+	font-size: 19px;
+	font-weight: 600;
 	color: white;
 	text-decoration: none;
 	transition: opacity 0.2s ease;
@@ -38,11 +39,8 @@
 
 .brackets {
 	color: rgb(133, 76, 230);
-	font-size: 32px;
-}
-
-.slash {
-	color: rgb(133, 76, 230);
+	font-size: 26px;
+	font-weight: 500;
 }
 
 .menu_icon {
@@ -61,7 +59,7 @@
 	list-style-type: none;
 	display: flex;
 	align-items: center;
-	gap: 24px;
+	gap: 16px;
 }
 
 .collapse li a {
@@ -102,6 +100,7 @@
 	color: rgba(255, 255, 255, 0.85);
 	text-decoration: none;
 	font-weight: 500;
+	font-size: 14.5px;
 	transition: color 0.3s ease;
 }
 
@@ -113,11 +112,13 @@
 	color: rgb(133, 76, 230);
 	text-decoration: none;
 	font-weight: 500;
+	font-size: 14.5px;
 }
 
 .github {
 	display: inline-block;
-	padding: 10px 24px;
+	padding: 8px 18px;
+	font-size: 14px;
 	font-weight: 500;
 	border-radius: 20px;
 	border: rgb(133, 76, 230) 2px solid;
